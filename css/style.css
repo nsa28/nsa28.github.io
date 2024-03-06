@@ -128,7 +128,98 @@ li a:active {
 .clearfix {
     clear:both;
 }
-	
+
+footer {
+	width: 100%;
+	background-color: black;
+	position: relative;
+	padding: 0;
+}
+
+.footer-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+}
+
+.footer-links-container {
+	float: top;
+	width: 100%;
+	height: 30px;
+	margin: auto;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-left: 10px;
+	background-color: none;
+}
+
+.footer-links-container img {
+	float: left;
+	width: 20px;
+	padding: 20px;
+	filter: invert(1);
+}
+
+.footer-logo img {
+	width: 150px;
+}
+
+.footer-nav-container {
+	width: 100%;
+	margin: auto;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.footer-nav-container ul li {
+	display: inline-block;
+	text-align: center;
+	font-family: "Nuetrina", sans-serif;
+	font-size: 16px;
+	padding-right: 40px;
+}
+
+.footer-nav-container ul li a {
+	color: #FF6EC0;
+	text-decoration:none;
+}
+
+.footer-nav-container li a:hover {
+  color: #FFCDE9;
+  text-shadow:
+      0 0 1px #f0f,
+      0 0 3px #f0f,
+      0 0 5px #f0f,
+      0 0 7px #f7a,
+      0 0 10px #f7a,
+      0 0 12px #f7a,
+      0 0 16px #f7a,
+      0 0 18px #f7a;
+}
+
+.footer-nav-container li a:active {
+  color: #FFCDE9;
+  text-shadow:
+      0 0 1px #f0f,
+      0 0 3px #f0f,
+      0 0 5px #f0f,
+      0 0 7px #f7a,
+      0 0 10px #f7a,
+      0 0 12px #f7a,
+      0 0 16px #f7a,
+      0 0 18px #f7a;
+}
+
+.footer-container p {
+	color: #FFCDE9;
+	font-size: 12px;
+	text-align: center;
+}
 
 /*promotional/teaser video*/
 
@@ -489,16 +580,17 @@ li a:active {
 	color: #FBFF3D;
 }
 
-.hp-comic-button{
+.hp-comic-desc-container h1 a {
 	background: none;
 	font-family: "Nuetrina", sans-serif;
-	font-size: 30px;
+	font-weight: 400;
+	font-size: 40px;
 	color: #FF6EC0;
 	text-decoration: none;
 	transition-duration: 0.03s;
 }
 
-.hp-comic-button:hover {
+.hp-comic-desc-container h1 a:hover {
   color: #FFCDE9;
   text-shadow:
       0 0 1px #f0f,
@@ -520,7 +612,7 @@ li a:active {
 #hp-gamedownload {
 	width: 100%;
 	height: 100vh;
-	background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("../images/background.jpeg");
+	background: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)), url("../images/background.jpeg");
 	background-size: cover;
 	position: relative;
 	padding: 0;
@@ -549,17 +641,19 @@ li a:active {
 	z-index: 100;
 }
 
-.hp-game-link {
+.hp-game-container h1 a{
 	background: none;
 	font-family: "Nuetrina", sans-serif;
-	font-size: 30px;
+	font-weight: 400;
+	font-size: 42px;
+	letter-spacing: 1px;
 	color: #FF6EC0;
 	text-decoration: none;
 	transition-duration: 0.03s;
 	padding-top: 30px;
 }
 
-.hp-game-link:hover {
+.hp-game-container h1 a:hover {
   color: #FFCDE9;
   text-shadow:
       0 0 1px #f0f,
@@ -598,6 +692,7 @@ li a:active {
 
 .hp-team-title {
 	font-family: "Nuetrina", sans-serif;
+	font-weight: 400;
 	font-size: 42px;
 	color: #FFCDE9;
 	text-shadow:
@@ -612,18 +707,24 @@ li a:active {
 }
 
 .hp-team-container {
-	float: left;
+	float: top;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 	margin: auto;
 	z-index: 100;
 }
 
 .hp-team-member {
+	height: 400px;
 	width: 220px;
 	padding: 30px;
 	float: left;
+	color: #FFCDE9;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	z-index: 100;
 }
 
 .hp-team-member img {
@@ -632,9 +733,9 @@ li a:active {
 
 .hp-team-member h2 {
 	font-family: "Nuetrina", sans-serif;
-	font-size: 30px;
+	letter-spacing: 1px;
+	font-size: 28px;
 	margin: 20px 0 0 0;
-	color: #FFCDE9;
 	text-shadow:
       0 0 1px #f0f,
       0 0 3px #f0f,
@@ -645,53 +746,16 @@ li a:active {
       0 0 14px #f7a;
 }
 
-.hp-team-member h3 {
-	font-family: pt-videotext, sans-serif;
-	font-size: 16px;
-	color: #FFCDE9;
-	margin: 0;
-}
-
-.hp-team-member#pau {
-	float: left;
-	display: flex;
-	flex-direction: column;
-	position: relative;
-	z-index: 100;
-}
-
-.hp-team-member#nad {
-	float: left;
-	display: flex;
-	flex-direction: column;
-	position: relative;
-	z-index: 100;
-}
-
-.hp-team-member#hannah {
-	float: left;
-	display: flex;
-	flex-direction: column;
-	position: relative;
-	z-index: 100;
-}
-
-.hp-team-member#eche {
-	float: left;
-	display: flex;
-	flex-direction: column;
-	position: relative;
-	z-index: 100;
-}
-
-.hp-team-member#ishi {
-	float: left;
-	display: flex;
-	flex-direction: column;
+.hp-team-member#ishi h2 {
+	font-size: 20px;
 	line-height: 27px;
-	position: relative;
-	top: 20px;
-	z-index: 100;
+}
+
+.hp-team-member h3 {
+	font-family: 'pf-videotext', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	float: left;
 }
 
 /*footer*/
@@ -857,7 +921,7 @@ li a:active {
 	color: #FBFF3D;
 }
 
-/*** ABOUT PAGE TEAM ***/
+/* ABOUT TEAM */
 
 #about-team {
 	width: 100%;
@@ -905,10 +969,12 @@ li a:active {
 }
 
 .about-team-member {
+	height: 400px;
 	width: 220px;
 	padding: 30px;
 	float: left;
 	color: #FFCDE9;
+	position: relative;
 }
 
 .about-team-member img {
@@ -917,6 +983,8 @@ li a:active {
 
 .about-team-member h2 {
 	font-family: "Nuetrina", sans-serif;
+	font-weight: 400;
+	letter-spacing: 1px;
 	font-size: 28px;
 	margin: 20px 0 0 0;
 	text-shadow:
@@ -933,6 +1001,23 @@ ul.roles {
 	list-style-type: none;
 	float: left;
 	padding: 0;
+}
+
+.team-member-contact {
+	float: left;
+	width: 100%;
+	margin-left: 0;
+	position: absolute;
+	bottom: 0;
+}
+
+.team-member-contact img {
+	float: left;
+	width: 20px;
+	filter: invert(1);
+	padding: 10px;
+	padding-left: 0;
+	bottom: 0;
 }
 
 .about-team-member#pau {
@@ -975,6 +1060,249 @@ ul.roles {
 	z-index: 100;
 }
 
-.about-team.member#ishi h2 {
-	line-height: 27px;
+.about-team-member#ishi h2 {
+	font-size: 24.5px;
+}
+
+/***COMIC PAGE***/
+
+.comic-lp {
+	width: 100%;
+	background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.75)), url("../images/background.jpeg");
+	background-size: cover;
+	position: relative;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.comic-lp-container {
+	float: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	padding: 30px;
+	z-index: 100;
+}
+
+.comic-desc-box {
+	position: absolute;
+	width: 300px;
+	height: 350px;
+	background: #F4FBFF;
+	border: 4px solid #FBFF3D;
+	top: 230px;
+	left: 400px;
+}
+
+.comic-desc-box h3 {
+	font-family: pf-videotext, sans-serif;
+	font-size: 18px;
+	text-align: justify;
+	letter-spacing: -5;
+	line-height: 1.4;
+	color: black;
+	padding: 30px;
+}
+
+.read-comic-button {
+	background: none;
+	font-family: "Nuetrina", sans-serif;
+	font-size: 30px;
+	color: #FF6EC0;
+	text-decoration: none;
+	transition-duration: 0.03s;
+}
+
+.read-comic-button:hover {
+  color: #FFCDE9;
+  text-shadow:
+      0 0 1px #f0f,
+      0 0 3px #f0f,
+      0 0 5px #f0f,
+      0 0 7px #f7a,
+      0 0 10px #f7a,
+      0 0 12px #f7a,
+      0 0 16px #f7a,
+      0 0 18px #f7a;
+}
+
+/***READ COMIC PAGE***/
+
+/***ARCHIVES PAGE***/
+
+#archives-characters {
+	width: 100%;
+	background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.75)), url("../images/background.jpeg");
+	background-size: cover;
+	position: relative;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.archives-characters-container {
+	width: 100%;
+	float: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	padding: 30px;
+	z-index: 100;
+}
+
+.archives-characters-container img {
+	width: 60%;
+}
+
+.character-bio {
+	width: 300px;
+	float: left;
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+}
+
+.character-bio p {
+	font-family: 'pf-videotext', sans-serif;
+	font-size: 16px;
+	text-align: left;
+	color: #FBFF3D;
+}
+
+.character-bio h1 {
+	font-family: 'Nuetrina', sans-serif;
+	font-size: 28px;
+	letter-spacing: 1px;
+	color: #FFCDE9;
+	text-shadow:
+      0 0 1px #f0f,
+      0 0 3px #f0f,
+      0 0 5px #f0f,
+      0 0 7px #f7a,
+      0 0 10px #f7a,
+      0 0 12px #f7a,
+      0 0 16px #f7a,
+      0 0 18px #f7a;
+}
+
+/*** GAME DOWNLOAD PAGE ***/
+
+#game-download-lp {
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("../images/background.jpeg");
+	background-size: cover;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+}
+
+.game-download-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	padding: 30px;
+	padding-top: 70px;
+}
+
+.game-download-container img {
+	width: 600px;
+}
+
+.game-download-container h1 a {
+	background: none;
+	font-family: "Nuetrina", sans-serif;
+	font-size: 42px;
+	color: #FF6EC0;
+	text-decoration: none;
+	transition-duration: 0.03s;
+	padding-top: 30px;
+}
+
+.game-download-container h1 a:hover {
+  color: #FFCDE9;
+  text-shadow:
+      0 0 1px #f0f,
+	  0 0 3px #f0f,
+      0 0 5px #f0f,
+      0 0 7px #f7a,
+      0 0 10px #f7a,
+      0 0 12px #f7a,
+      0 0 16px #f7a,
+      0 0 18px #f7a;
+}
+
+#game-installation {
+	width: 100%;
+	background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.75)), url("../images/background.jpeg");
+	background-size: cover;
+	position: relative;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.game-installation-maincontainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	padding: 30px;
+	z-index: 100;
+}
+
+.game-install-title {
+	font-family: "Nuetrina", sans-serif;
+	font-size: 42px;
+	color: #FFCDE9;
+	text-shadow:
+      0 0 1px #f0f,
+      0 0 3px #f0f,
+      0 0 5px #f0f,
+      0 0 7px #f7a,
+      0 0 10px #f7a,
+      0 0 12px #f7a,
+      0 0 16px #f7a,
+      0 0 18px #f7a;
+}
+
+.game-installation-container {
+	float: top;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	margin: auto;
+	z-index: 100;
+}
+
+.game-install-step {
+	height: 400px;
+	width: 220px;
+	padding: 30px;
+	float: left;
+	color: #FFCDE9;
+	position: relative;
+}
+
+.game-install-step img {
+	padding-bottom: 0px;
+}
+
+.game-install-step h3 {
+	font-family: "pf-videotext", sans-serif;
+	font-weight: 400;
+	margin: 20px 0 0 0;
 }
