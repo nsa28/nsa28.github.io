@@ -1,0 +1,65 @@
+#comic-lp {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	padding: 0;
+	display: flex;
+	align-items: center;
+}
+
+.comic-lp-container {
+	display: flex;
+	align-items: center;
+	margin: auto;
+	padding-top: 80px;
+}
+
+/**
+.comic-poster img {
+	width: 380px;
+}
+*/
+
+.comic-desc-container{
+	width: 400px;
+	float: left;
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	padding: 60px;
+}
+
+.comic-desc-container p{
+	font-family: pf-videotext, sans-serif;
+	font-size: 18px;
+	text-align: justify;
+	letter-spacing: -5;
+	line-height: 1.4;
+	color: #FBFF3D;
+}
+
+.comic-desc-container a {
+	width: 180px;
+	background-color: #180C7D;
+	font-family: "Nuetrina", sans-serif;
+	font-size: 24px;
+	color: #FBFF3D;
+	text-decoration: none;
+	text-align: center;
+	padding: 20px 40px;
+	display: inline-block;
+	transition-duration: 0.3s;
+}
+
+.comic-desc-container a:hover {
+	background: #F4FBFF;
+	border: 3px solid #180C7D;
+	color: #180C7D;
+}
+
+.comic-desc-container a:active {
+	background-color: #180C7D;
+	color: #FBFF3D;
+}
+
+/***READ COMIC PAGE -- WIP ***/
