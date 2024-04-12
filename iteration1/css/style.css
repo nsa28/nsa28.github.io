@@ -22,12 +22,21 @@ img {
 }
 
 header {
-	background-image: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url('../images/animation.mp4');
-	background-size: cover;
-	width: 100%;
-	height: 100vh;
 	position: absolute;
 	padding: 0;
+}
+
+#background-video {
+	width: 100%;
+	opacity: 70%;
+	height: 100vh;
+	object-fit: cover;
+	position: relative;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: -1;
 }
 
 nav {
@@ -80,39 +89,50 @@ li a:active {
       0 0 18px #f7a;
 }
 
+.nav-wrapper {
+  display: none;
+}
+
 #landing-page {
-	width: 100%;
-	height: 100vh;
-	position: relative;
-	padding: 0;
-	display: flex;
-	align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 0;
+    display: flex;
+    align-items: center;
 }
 
 .logo {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: auto;
-	position: absolute;
-	z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: absolute;
+    z-index: 1;
+    top: 50%; /* Position the logo vertically centered */
+    transform: translateY(-50%); /* Center the logo vertically */
 }
 
 .logo img {
-	width: 20%;
+    width: 20%;
 }
 
 .footer-links-lp {
-	width: 100%;
-	height: 30px;
-	margin: auto;
-	bottom: 10px;
-	position: absolute;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding-left: 10px;
-	background-color: none;
+    width: 100%;
+    margin: auto;
+    bottom: 10px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    background-color: none;
+    z-index: 1;
+}
+
+.footer-links-lp a {
+    display: inline-block;
+    margin: 0 10px;
 }
 
 .footer-links-lp img {
@@ -122,18 +142,22 @@ li a:active {
 	filter: invert(1);
 }
 
+
 /*promotional/teaser video*/
 
-#teaser {
+#docu {
 	height: 100vh;
 	position: relative;
-	padding: 0;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	align-items: center;
+	margin: auto;
+	padding: 30px;
+	z-index: 1
 }
 
-.teaser-vid {
+.docu-vid {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -675,6 +699,11 @@ footer {
 	background-color: none;
 }
 
+.footer-links-container a {
+	display: inline-block;
+    margin: 0 10px;
+}
+
 .footer-links-container img {
 	float: left;
 	width: 20px;
@@ -742,3 +771,15 @@ footer {
 	font-size: 12px;
 	text-align: center;
 }
+
+/*mobile version sjdfsjdsfkds*/
+
+#landing-page-mobile {
+	background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url('../images/slums-bg.jpg');
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+}
+
+/* MEDIA QUERIES */
+
