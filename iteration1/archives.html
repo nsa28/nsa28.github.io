@@ -20,12 +20,12 @@
 	</head>
 	<body class="archives-body">
 		<header>
-			<nav>
-				<div class="nav-wrapper">
-					<a href="javascript:void(0);" class="icon" onclick="hamburger()"><i class="fa fa-bars"></i></a>
-					<img src="images/cc-logo.png">
-					<!-- <i class="fa fa-[cc favicon]"></i> -->
-				</div>
+			<div id="hamburger">
+				<span></span>
+				<span></span>
+				<span></span>  
+			</div>
+			<nav id="myNav" class="nav">
 				<ul>
 					<li><a href="index.html">home</a></li>
 					<li><a href="about.html">about</a></li>
@@ -42,14 +42,12 @@
 			<section id="animation">
 				<div class="animation-main-container">
 					<h1>animation teaser</h1>
-					<div class="animation-container">
-						<div class="teaser">
-							<iframe width="854" height="480" src="https://www.youtube.com/embed/u9fmU4U0q4k?si=6qgmkvknFBiyn3Ik" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-							<div class="caption-teaser">
-								<h6>Sketch, Storyboard and Clean-Up by Eche Cordero</h6>
-								<h6>Coloring by Pau Alejandrino</h6>
-								<h6>Post-Production by Cristina Hernandez</h6>
-							</div>
+					<div class="teaser">
+						<iframe width="854" height="480" src="https://www.youtube.com/embed/u9fmU4U0q4k?si=6qgmkvknFBiyn3Ik" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						<div class="caption-teaser">
+							<h6>Sketch, Storyboard and Clean-Up by Eche Cordero</h6>
+							<h6>Coloring by Pau Alejandrino</h6>
+							<h6>Post-Production by Cristina Hernandez</h6>
 						</div>
 					</div>
 				</div>
@@ -72,12 +70,10 @@
 			<section id="posters">
 				<div class="posters-main-container">
 					<h1>illustrations</h1>
-					<div class="poster-container">
-						<div class="illustration">
-							<img src="images/cc-poster.png">
-							<div class="caption">
-								<h6>Art by Eche Cordero, Graphics by Nadiah Azman</h6>
-							</div>
+					<div class="illustration">
+						<img src="images/cc-poster.png">
+						<div class="caption">
+							<h6>Art by Eche Cordero, Graphics by Nadiah Azman</h6>
 						</div>
 					</div>
 				</div>
@@ -193,6 +189,15 @@
 
 	<script>
 		$(document).ready(function(){
+		  $('#hamburger').on('click', function() {
+		    $(this).toggleClass('close');
+		    $('#myNav').toggleClass('visible');
+		  });
+		});
+	</script>
+
+	<script>
+		$(document).ready(function(){
 	      $('.character-sheet-container').slick({
 	        slidesToShow: 1,
 	        slidesToScroll: 1,
@@ -201,6 +206,15 @@
 	        speed: 500,
 	        infinite: true,
 	        autoplay: false,
+	        responsive: [
+		    {
+		      breakpoint: 749,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1,
+		      },
+		    },
+		  ],
 	      });
 	    });
 	</script>

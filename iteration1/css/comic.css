@@ -62,4 +62,10 @@
 	color: #FBFF3D;
 }
 
+@media screen and (max-width: 749px) {
+	.comic-lp-container {
+		width: 100%;
+	}
+}
+
 /***READ COMIC PAGE -- WIP ***/
