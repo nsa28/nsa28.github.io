@@ -49,6 +49,91 @@ p {
 	color: #FBFF3D;
 }
 
+#animation {
+	width: 100%;
+	position: relative;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 60px;
+}
+
+.animation-main-container {
+	width: 80%;
+	background-color: #0D1010;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 50px;
+	padding: 20px;
+}
+
+
+@media screen and (min-width: 750px) {
+	.animation-container {
+		width: 800px;
+		margin: auto;
+	}
+}
+
+.teaser {
+	position: relative;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center
+}
+
+.caption-teaser {
+	width: 800px;
+	text-align: center;
+}
+
+.caption-teaser h6 {
+	padding: 5px;
+}
+
+#docu {
+	width: 100%;
+	position: relative;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 60px;
+}
+
+.docu-main-container {
+	width: 80%;
+	background-color: #0D1010;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 50px;
+	padding: 20px;
+}
+
+
+@media screen and (min-width: 750px) {
+	.docu-container {
+		width: 800px;
+		margin: auto;
+	}
+}
+
+.docu {
+	position: relative;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center
+}
+
+.caption {
+	text-align: center;
+}
+
 #posters {
 	width: 100%;
 	position: relative;
@@ -91,7 +176,7 @@ p {
 }
 
 .caption {
-	width: 300px;
+	width: 600px;
 	text-align: center;
 	padding: 30px;
 }
@@ -136,7 +221,7 @@ p {
 }
 
 .character-bio {
-	width: 300px;
+	width: 600px;
 	text-align: left;
 	padding: 30px;
 }
@@ -187,6 +272,7 @@ h6 {
 	font-weight: 300;
 	text-align: center;
 	color: #FBFF3D;
+	margin: 0;
 }
 
 .slick-dots li button:before,
