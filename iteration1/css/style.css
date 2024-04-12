@@ -1,5 +1,17 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+}
+
 body {
-    font-family: pf-videotext, sans-serif;
+  font-family: pf-videotext, sans-serif;
 	font-size: 14px;
 	font-style: normal;
 	font-weight: 400;
@@ -8,9 +20,6 @@ body {
 	background: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)), url('../images/city.jpg');
 	background-size: cover;
 	background-position: center;
-	overflow-x: hidden;
-	margin: 0;
-	padding: 0;
 }
 
 h1 {
@@ -19,11 +28,6 @@ h1 {
 
 img {
     width: 100%;
-}
-
-header {
-	position: absolute;
-	padding: 0;
 }
 
 #background-video {
@@ -39,10 +43,94 @@ header {
 	z-index: -1;
 }
 
+/* Mobile hamburger */
+#hamburger {
+  height: 50px;
+  width: 50px;
+  background: #FF6EC0;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 4px rgba(0,0,0,0);
+  transition: all .2s ease;
+  z-index: 9999;
+}
+  
+#hamburger:hover {
+  box-shadow:  0 0 1px #f0f,
+  	0 0 3px #f0f,
+  	0 0 5px #f0f,
+  	0 0 7px #f7a,
+  	0 0 10px #f7a,
+  	0 0 12px #f7a,
+  	0 0 16px #f7a,
+  	0 0 18px #f7a;
+  transition: all .2s ease;
+}
+
+#hamburger span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  border-radius: 10px;
+  transition: all .15s ease;
+}
+  
+#hamburger span:first-child {
+  top: 17px;
+}
+  
+#hamburger span:nth-child(2) {
+  top: 25px;
+}
+  
+#hamburger span:last-child {
+  top: 33px;
+}
+
+#hamburger.close {
+  box-shadow: 0 0 1px #f0f,
+      0 0 3px #f0f,
+      0 0 5px #f0f,
+      0 0 7px #f7a,
+      0 0 10px #f7a,
+      0 0 12px #f7a,
+      0 0 16px #f7a,
+      0 0 18px #f7a;
+}
+    
+#hamburger.close span:first-child {
+  top: 15px;
+  transform: translate(-14px, 10px) rotate(135deg);
+}
+
+#hamburger.close span:nth-child(2) {
+  left: -20px;
+  opacity: 0;
+}
+
+#hamburger.close span:last-child {
+  top: 15px;
+  transform: translate(-14px, 10px) rotate(-135deg);
+}
+
+/* End of mobile navigation */
+
+header {
+	position: absolute;
+	padding: 0;
+}
+
 nav {
 	float: none;
 	width: 100%;
-	margin: auto;
+	margin: 15px 0;
 	position: fixed;
 	display: flex;
 	justify-content: center;
@@ -118,27 +206,27 @@ li a:active {
 }
 
 .footer-links-lp {
-    width: 100%;
-    margin: auto;
-    bottom: 10px;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 10px;
-    background-color: none;
-    z-index: 1;
+  width: 100%;
+  margin: auto;
+  bottom: 0;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 2rem;
+  background-color: transparent;
+  z-index: 1;
 }
 
 .footer-links-lp a {
-    display: inline-block;
-    margin: 0 10px;
+  display: inline-block;
+  margin: 0 10px;
 }
 
 .footer-links-lp img {
-	float: left;
 	width: 20px;
-	padding: 20px;
+  height: 20px;
 	filter: invert(1);
 }
 
@@ -181,7 +269,6 @@ li a:active {
 	align-items: center;
 	margin: auto;
 	padding: 30px;
-	z-index: 100;
 }
 
 .hp-about-poster img {
@@ -222,16 +309,6 @@ li a:active {
 	height: 100vh;
 	position: relative;
 	padding: 0;
-}
-
-.hp-rationale-container {
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: auto;
-	padding: 30px;
-	z-index: 1;
 }
 
 .article {
@@ -443,9 +520,9 @@ li a:active {
 	text-align: center;
 	padding: 15px;
 	display: inline-block;
-	position: absolute;
-	right: 30px;
-	bottom: 70px;
+	float: right;
+  margin-left: auto;
+  margin-top: 20px;
 	transition-duration: 0.3s;
 }
 
@@ -553,7 +630,6 @@ li a:active {
 	align-items: center;
 	margin: auto;
 	padding: 30px;
-	z-index: 100;
 }
 
 .hp-game-container h1 a{
@@ -571,14 +647,14 @@ li a:active {
 .hp-game-container h1 a:hover {
   color: #FFCDE9;
   text-shadow:
-      0 0 1px #f0f,
-      0 0 3px #f0f,
-      0 0 5px #f0f,
-      0 0 7px #f7a,
-      0 0 10px #f7a,
-      0 0 12px #f7a,
-      0 0 16px #f7a,
-      0 0 18px #f7a;
+    0 0 1px #f0f,
+    0 0 3px #f0f,
+    0 0 5px #f0f,
+    0 0 7px #f7a,
+    0 0 10px #f7a,
+    0 0 12px #f7a,
+    0 0 16px #f7a,
+    0 0 18px #f7a;
 }
 
 /* THE TEAM SECTION */
@@ -609,18 +685,17 @@ li a:active {
 	font-size: 42px;
 	color: #FFCDE9;
 	text-shadow:
-      0 0 1px #f0f,
-      0 0 3px #f0f,
-      0 0 5px #f0f,
-      0 0 7px #f7a,
-      0 0 10px #f7a,
-      0 0 12px #f7a,
-      0 0 16px #f7a,
-      0 0 18px #f7a;
+    0 0 1px #f0f,
+    0 0 3px #f0f,
+    0 0 5px #f0f,
+    0 0 7px #f7a,
+    0 0 10px #f7a,
+    0 0 12px #f7a,
+    0 0 16px #f7a,
+    0 0 18px #f7a;
 }
 
 .hp-team-container {
-	float: top;
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
@@ -629,7 +704,7 @@ li a:active {
 }
 
 .hp-team-member {
-	height: 400px;
+	height: auto;
 	width: 220px;
 	padding: 30px;
 	float: left;
@@ -651,12 +726,12 @@ li a:active {
 	margin: 20px 0 0 0;
 	color: #C7F7FF;
 	text-shadow:
-      0 0 1px #0027FF,
-      0 0 3px #0027FF,
-      0 0 5px #0027FF,
-      0 0 7px #0027FF,
-      0 0 9px #83EEFF,
-      0 0 10px #83EEFF;
+    0 0 1px #0027FF,
+    0 0 3px #0027FF,
+    0 0 5px #0027FF,
+    0 0 7px #0027FF,
+    0 0 9px #83EEFF,
+    0 0 10px #83EEFF;
 }
 
 .hp-team-member h3 {
@@ -674,8 +749,8 @@ footer {
 	background-color: black;
 	display: block;
 	position: relative;
-	bottom: 0;
-	left: 0;
+	bottom: 10px;
+	text-align: center;
 }
 
 .footer-container {
@@ -696,7 +771,7 @@ footer {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: none;
+	background-color: transparent;
 }
 
 .footer-links-container a {
@@ -705,9 +780,8 @@ footer {
 }
 
 .footer-links-container img {
-	float: left;
 	width: 20px;
-	padding: 20px;
+	height: 20px;
 	filter: invert(1);
 }
 
@@ -727,12 +801,14 @@ footer {
 
 .footer-nav-container ul li {
 	display: inline-block;
-	float: left;
-	align-items: center;
 	text-align: center;
 	font-family: "Nuetrina", sans-serif;
 	font-size: 16px;
 	padding-right: 40px;
+}
+
+.footer-nav-container ul li:last-child {
+	padding-right: 0;
 }
 
 .footer-nav-container ul li a {
@@ -766,20 +842,187 @@ footer {
       0 0 18px #f7a;
 }
 
-.footer-container p {
+.footer-nav-container p, .footer-container-mobile p {
 	color: #FFCDE9;
 	font-size: 12px;
 	text-align: center;
 }
 
-/*mobile version sjdfsjdsfkds*/
-
-#landing-page-mobile {
-	background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url('../images/slums-bg.jpg');
-	background-size: cover;
-	width: 100%;
-	height: 100vh;
+/* MEDIA QUERIES */
+@media screen and (min-width: 750px) {
+	#hamburger {
+		display: none;
+	}
 }
 
-/* MEDIA QUERIES */
+@media screen and (max-width: 749px) {
+	#myNav {
+		height: 100vh;
+	  float: right;
+	  background: white;
+	  color: #FF6EC0;
+	  width: 70%;
+	  box-shadow: 0 1px 20px rgba(0,0,0,0.25);
+	  position: relative;
+	  z-index: 3;  
+	  transform: translateX(200px);
+	  opacity: 0;
+	  margin: 0;
+	  transition: all .2s ease-in-out;
+	}
 
+	#myNav.visible {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  #myNav ul {
+	  list-style: none;
+	  padding: 0;
+  }
+
+	#myNav ul li {
+		width: 100%;
+		transition: all 0.15s ease;
+	}
+
+	#myNav ul li a {
+		display: block;
+		padding: 10px 0 10px 20px;
+		width: 100%;
+		height: 100%;
+		text-align: left;
+	}
+
+	#myNav ul li:hover {
+		transition: all 0.15s ease;
+	}
+
+	/* Landing page*/
+	.logo img { width: 60%; }
+
+	/* Docu */
+	#docu {
+		height: 50vh;
+	}
+
+	.docu-vid {
+		padding: 0;
+		margin: 0;
+	}
+
+	iframe {
+    width: 100% !important;
+    height: auto !important;
+	}
+
+	/* HP About */
+	#hp-about { height: auto; }
+	.hp-about-maincontainer {
+		z-index: unset;
+		flex-direction: column;
+	}
+
+	.hp-about-container {
+		width: 100%;
+    float: unset;
+    padding: 20px;
+    margin-left: 0;
+	}
+
+	.hp-about-poster img {
+    width: 100%;
+    padding: 0 30px 30px 30px;
+    margin: 0;
+	}
+
+	.hp-about-container img {
+		width: 60%;
+		margin: 0;
+	}
+
+	/*HP Rationale */
+	#hp-rationale { height: auto; }
+
+	.hp-rationale-container {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		margin: auto;
+		padding: 20px;
+	}
+
+	.article#one,
+	.article#two,
+	.article#three,
+	.article#four,
+	.misinfo-article {
+		position: unset;
+		width: 100%;
+		height: auto;
+		top: unset;
+		left: unset;
+	}
+
+	.article {
+		margin-bottom: 15px;
+	}
+
+	.article-container#one,
+	.article-container#two,
+	.article-container#three,
+	.article-container#four {
+		padding: 20px;
+	}
+
+	.article#one h1,
+	.article#two h1,
+	.article#three h1,
+	.article#four h1,
+	.misinfo-container h1 {
+		font-size: 22px;
+	}
+
+	/* HP Comic */
+	#hp-comic { height: auto; }
+
+	.hp-comic-container {
+		padding-top: 0px;
+	}
+
+	.hp-comic-desc-container {
+		width: 100%;
+		float: unset;
+		padding: 20px;
+	}
+
+	/* HP Game Download */
+	#hp-gamedownload { height: auto; }
+
+	.hp-game-poster {
+		width: 100%;
+		padding: 0;
+	}
+
+	.hp-game-container h1 { text-align: center; }
+
+	/* HP Team */
+	#hp-team { height: auto; }
+	.hp-team-container {
+		flex-direction: column;
+	}
+
+	.hp-team-maincontainer, .hp-team-container {
+		padding: 0;
+	}
+
+	.hp-team-member { padding-top: 10px; }
+
+	.footer-nav-container ul li {
+		padding-right: 10px;
+	}
+
+	.footer-nav-container ul li:last-child {
+		padding-right: 0;
+	}
+}

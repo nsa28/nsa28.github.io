@@ -206,13 +206,16 @@ p {
 		width: 1100px;
 		margin: auto;
 	}
+
+	.character-sheet {
+	  display: flex !important;
+	}
 }
 
 .character-sheet {
 	position: relative;
 	padding: 30px;
 	margin: auto;
-	display: flex !important;
 	align-items: center;
 }
 
@@ -278,4 +281,21 @@ h6 {
 .slick-dots li button:before,
 .slick-dots li.slick-active button:before {
   color: white !important;
+}
+
+@media screen and (max-width: 749px) {
+	.teaser,
+	.caption-teaser,
+	.posters-main-container,
+	.illustration,
+	.illustration img,
+	.archives-characters-container,
+	.character-sheet-container,
+	.character-bio,
+	.character-sheet img,
+	.art-main-container,
+	.concept-art-container,
+	.artwork img {
+		width: 100%;
+	}
 }

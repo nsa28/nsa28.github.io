@@ -11,15 +11,16 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 	</head>
 	<body>
 		<header>
-			<nav>
-				<div class="nav-wrapper">
-					<a href="javascript:void(0);" class="icon" onclick="hamburger()"><i class="fa fa-bars"></i></a>
-					<img src="images/cc-logo.png">
-					<!-- <i class="fa fa-[cc favicon]"></i> -->
-				</div>
+			<div id="hamburger">
+				<span></span>
+				<span></span>
+				<span></span>  
+			</div>
+			<nav id="myNav" class="nav">
 				<ul>
 					<li><a href="index.html">home</a></li>
 					<li><a href="about.html">about</a></li>
@@ -33,7 +34,7 @@
 		</header>
 		
 		<main>
-			<section id="landing-page">
+			<section id="landing-page-forum">
 				<div class="forum-container">
 					<div class="logo">
 						<img src="images/cc-logo.png">
@@ -90,5 +91,14 @@
 				<p>Copyright 2024 - The Chronicle Cipher Team. DLS-CSB Multimedia Arts Capstone. Web Development by Nadiah Azman. Hosted on Github.</p>
 			</div>
 		</footer>
+
+		<script>
+		$(document).ready(function(){
+		  $('#hamburger').on('click', function() {
+		    $(this).toggleClass('close');
+		    $('#myNav').toggleClass('visible');
+		  });
+		});
+		</script>
 	</body>
 </html>

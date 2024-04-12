@@ -219,3 +219,23 @@ ul.roles {
 	padding: 10px;
 	padding-left: 0;
 }
+
+@media screen and (max-width: 749px) {
+	#about-lp {
+		height: auto;
+	}
+
+	.about-lp-container,
+	.about-lp-bio-container,
+	.about-team-maincontainer {
+		width: 100%;
+	}
+
+	.about-lp-container img {
+		width: 60%;
+	}
+
+	.about-team-container {
+		flex-direction: column;
+	}
+}

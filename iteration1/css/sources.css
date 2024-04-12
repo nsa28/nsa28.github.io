@@ -91,3 +91,10 @@ p {
 	background-color: #180C7D;
 	color: #FBFF3D;
 }
+
+@media screen and (max-width: 749px) {
+	.sources-maincontainer,
+	.source-blurb {
+		width: 100%;
+	}
+}
