@@ -11,7 +11,7 @@ body, html {
 }
 
 body {
-  font-family: pf-videotext, sans-serif;
+	font-family: pf-videotext, sans-serif;
 	font-size: 14px;
 	font-style: normal;
 	font-weight: 400;
@@ -32,7 +32,6 @@ img {
 
 #background-video {
 	width: 100%;
-	opacity: 70%;
 	height: 100vh;
 	object-fit: cover;
 	position: relative;
@@ -51,7 +50,6 @@ img {
   position: absolute;
   top: 20px;
   right: 20px;
-  border-radius: 50%;
   cursor: pointer;
   box-shadow: 0 0 4px rgba(0,0,0,0);
   transition: all .2s ease;
@@ -540,29 +538,43 @@ li a:active {
 /*COMIC SECTION*/
 
 #hp-comic {
-	width: 100%;
 	height: 100vh;
 	position: relative;
-	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	padding: 30px;
 }
 
 .hp-comic-container {
 	width: 100%;
 	position: relative;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	margin: auto;
-	padding-top: 55px;
+	padding: 30px;
+}
+
+.comic-logo {
+	width: 600px;
+	padding: 20px;
+}
+
+.comic-logo img {
+	width: 80%;
 }
 
 .hp-comic-desc-container{
-	width: 400px;
-	float: left;
+	width: 600px;
 	display: flex;
 	flex-direction: column;
 	align-self: center;
 	padding-right: 150px;
+	margin: auto;
 }
 
 .hp-comic-desc-container p{
@@ -595,10 +607,6 @@ li a:active {
       0 0 12px #f7a,
       0 0 16px #f7a,
       0 0 18px #f7a;
-}
-
-.hp-comic-poster img {
-	width: 380px;
 }
 
 /*GAME DOWNLOAD SECTION*/
@@ -670,13 +678,13 @@ li a:active {
 }
 
 .hp-team-maincontainer {
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	margin: auto;
 	padding: 30px;
-	z-index: 1;
 }
 
 .hp-team-title {
@@ -700,19 +708,17 @@ li a:active {
 	justify-content: center;
 	align-items: flex-start;
 	margin: auto;
-	z-index: 1;
 }
 
 .hp-team-member {
 	height: auto;
-	width: 220px;
+	width: 280px;
 	padding: 30px;
 	float: left;
 	color: #FFCDE9;
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	z-index: 1;
 }
 
 .hp-team-member img {
@@ -740,6 +746,7 @@ li a:active {
 	font-size: 14px;
 	font-weight: 400;
 	float: left;
+	padding-top: 5px;
 }
 
 /***FOOTER***/
@@ -749,7 +756,6 @@ footer {
 	background-color: black;
 	display: block;
 	position: relative;
-	bottom: 10px;
 	text-align: center;
 }
 
@@ -846,6 +852,7 @@ footer {
 	color: #FFCDE9;
 	font-size: 12px;
 	text-align: center;
+	padding: 10px;
 }
 
 /* MEDIA QUERIES */
@@ -858,28 +865,28 @@ footer {
 @media screen and (max-width: 749px) {
 	#myNav {
 		height: 100vh;
-	  float: right;
-	  background: white;
-	  color: #FF6EC0;
-	  width: 70%;
-	  box-shadow: 0 1px 20px rgba(0,0,0,0.25);
-	  position: relative;
-	  z-index: 3;  
-	  transform: translateX(200px);
-	  opacity: 0;
-	  margin: 0;
-	  transition: all .2s ease-in-out;
+		float: right;
+		  background: #141B5D;
+		  color: #FF6EC0;
+		  width: 40%;
+		  box-shadow: 0 1px 20px rgba(0,0,0,0.25);
+		  position: relative;
+		  z-index: 3;  
+		  transform: translateX(200px);
+		  opacity: 0;
+		  margin: 0;
+		  transition: all .2s ease-in-out;
 	}
 
 	#myNav.visible {
-    transform: translateX(0);
-    opacity: 1;
-  }
+		transform: translateX(0);
+		opacity: 1;
+	}
 
-  #myNav ul {
-	  list-style: none;
-	  padding: 0;
-  }
+	#myNav ul {
+		list-style: none;
+		padding: 0;
+	}
 
 	#myNav ul li {
 		width: 100%;
@@ -899,11 +906,13 @@ footer {
 	}
 
 	/* Landing page*/
-	.logo img { width: 60%; }
+	.logo img {
+		width: 60%;
+	}
 
 	/* Docu */
 	#docu {
-		height: 50vh;
+		height: 65vh;
 	}
 
 	.docu-vid {
@@ -912,12 +921,15 @@ footer {
 	}
 
 	iframe {
-    width: 100% !important;
-    height: auto !important;
+		width: 100% !important;
+		height: auto !important;
 	}
 
 	/* HP About */
-	#hp-about { height: auto; }
+	#hp-about { 
+		height: auto;
+	}
+	
 	.hp-about-maincontainer {
 		z-index: unset;
 		flex-direction: column;
@@ -925,15 +937,15 @@ footer {
 
 	.hp-about-container {
 		width: 100%;
-    float: unset;
-    padding: 20px;
-    margin-left: 0;
+		float: unset;
+		padding: 20px;
+		margin-left: 0;
 	}
 
 	.hp-about-poster img {
-    width: 100%;
-    padding: 0 30px 30px 30px;
-    margin: 0;
+		width: 100%;
+		padding: 0 30px 30px 30px;
+		margin: 0;
 	}
 
 	.hp-about-container img {
@@ -942,7 +954,9 @@ footer {
 	}
 
 	/*HP Rationale */
-	#hp-rationale { height: auto; }
+	#hp-rationale {
+		height: auto;
+	}
 
 	.hp-rationale-container {
 		position: relative;
@@ -984,10 +998,13 @@ footer {
 	}
 
 	/* HP Comic */
-	#hp-comic { height: auto; }
+	#hp-comic {
+		height: 100vh;
+	}
 
 	.hp-comic-container {
 		padding-top: 0px;
+		justify-content: center;
 	}
 
 	.hp-comic-desc-container {
@@ -997,7 +1014,9 @@ footer {
 	}
 
 	/* HP Game Download */
-	#hp-gamedownload { height: auto; }
+	#hp-gamedownload {
+		height: auto;
+	}
 
 	.hp-game-poster {
 		width: 100%;
