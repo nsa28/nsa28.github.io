@@ -17,7 +17,7 @@ body {
 	font-weight: 400;
 	letter-spacing: -0.5px;
 	line-height: 1.4;
-	background: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)), url('../images/city.jpg');
+	background: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)), url('../images/city-bg.jpg');
 	background-size: cover;
 	background-position: center;
 }
@@ -537,38 +537,36 @@ li a:active {
 /*COMIC SECTION*/
 
 #hp-comic {
+	width: 100%;
 	height: 100vh;
 	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	align-items: center;
 	margin: auto;
 	padding: 30px;
 }
 
 .hp-comic-container {
-	width: 100%;
 	position: relative;
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	margin: auto;
-	padding: 30px;
 }
 
 .comic-logo {
-	width: 600px;
 	padding: 20px;
+	position: relative;
+	align-items: center;
 }
 
 .comic-logo img {
-	width: 80%;
+	width: 70%;
+	float: right;
 }
 
 .hp-comic-desc-container{
-	width: 600px;
 	display: flex;
 	flex-direction: column;
 	align-self: center;
@@ -583,6 +581,7 @@ li a:active {
 	letter-spacing: -5;
 	line-height: 1.4;
 	color: #FBFF3D;
+	margin-bottom: 20px;
 }
 
 .hp-comic-desc-container h1 a {
@@ -626,6 +625,8 @@ li a:active {
 	justify-content: center;
 	align-items: center;
 	margin: auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
 	padding: 30px;
 	z-index: 1;
 }
@@ -668,22 +669,12 @@ li a:active {
 
 #hp-team {
 	width: 100%;
-	height: 100vh;
 	position: relative;
-	padding: 0;
+	padding: 30px 0;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-}
-
-.hp-team-maincontainer {
-	width: 100%;
-	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	margin: auto;
-	padding: 30px;
 }
 
 .hp-team-title {
@@ -703,10 +694,13 @@ li a:active {
 }
 
 .hp-team-container {
+	max-width: 1280px;
+	width: 90%;	
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
 	margin: auto;
+	justify-items: space-between;
 }
 
 .hp-team-member {
@@ -808,7 +802,6 @@ footer {
 	display: inline-block;
 	text-align: center;
 	font-family: "Nuetrina", sans-serif;
-	font-size: 16px;
 	padding-right: 40px;
 }
 
@@ -819,6 +812,7 @@ footer {
 .footer-nav-container ul li a {
 	color: #FF6EC0;
 	text-decoration:none;
+	font-size: 16px;
 }
 
 .footer-nav-container li a:hover {
@@ -847,7 +841,7 @@ footer {
       0 0 18px #f7a;
 }
 
-.footer-nav-container p, .footer-container-mobile p {
+.footer-nav-container p, .footer-container p {
 	color: #FFCDE9;
 	font-size: 12px;
 	text-align: center;
@@ -862,19 +856,23 @@ footer {
 }
 
 @media screen and (max-width: 749px) {
+	body {
+		font-size: 14px !important;
+	}
+	
 	#myNav {
 		height: 100vh;
 		float: right;
-		  background: #141B5D;
-		  color: #FF6EC0;
-		  width: 40%;
-		  box-shadow: 0 1px 20px rgba(0,0,0,0.25);
-		  position: relative;
-		  z-index: 3;  
-		  transform: translateX(200px);
-		  opacity: 0;
-		  margin: 0;
-		  transition: all .2s ease-in-out;
+		background: #141B5D;
+		color: #FF6EC0;
+		width: 40%;
+		box-shadow: 0 1px 20px rgba(0,0,0,0.25);
+		position: relative;
+		z-index: 3;  
+		transform: translateX(200px);
+		opacity: 0;
+		margin: 0;
+		transition: all .2s ease-in-out;
 	}
 
 	#myNav.visible {
@@ -898,15 +896,24 @@ footer {
 		width: 100%;
 		height: 100%;
 		text-align: left;
+		font-size: 20px;
 	}
 
 	#myNav ul li:hover {
 		transition: all 0.15s ease;
 	}
+	
+	h1 {
+		font-size: 32px;
+	}
 
 	/* Landing page*/
 	.logo img {
 		width: 60%;
+	}
+	
+	.background-video {
+		display: none;
 	}
 
 	/* Docu */
@@ -939,6 +946,11 @@ footer {
 		float: unset;
 		padding: 20px;
 		margin-left: 0;
+		font-size: 16px;
+	}
+	
+	.hp-about-container p {
+		font-size: 16px;
 	}
 
 	.hp-about-poster img {
@@ -997,6 +1009,7 @@ footer {
 	}
 
 	/* HP Comic */
+	
 	#hp-comic {
 		height: 100vh;
 	}
@@ -1004,12 +1017,24 @@ footer {
 	.hp-comic-container {
 		padding-top: 0px;
 		justify-content: center;
+		display: flex;
+		flex-direction: column;
 	}
 
 	.hp-comic-desc-container {
-		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-self: center;
 		float: unset;
 		padding: 20px;
+	}
+	
+	.hp-comic-desc-container p {
+		font-size: 16px;
+	}
+	
+	.hp-comic-desc-container h1 a {
+		font-size: 32px;
 	}
 
 	/* HP Game Download */
@@ -1022,11 +1047,22 @@ footer {
 		padding: 0;
 	}
 
-	.hp-game-container h1 { text-align: center; }
+	.hp-game-container h1 a {
+		text-align: center;
+		font-size: 32px;
+	}
 
 	/* HP Team */
-	#hp-team { height: auto; }
+	#hp-team {
+		height: auto;
+	}
+	
+	#hp-team h1 {
+		font-size: 32px;
+	}
+	
 	.hp-team-container {
+		align-items: center;
 		flex-direction: column;
 	}
 
