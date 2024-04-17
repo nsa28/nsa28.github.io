@@ -11,7 +11,7 @@ body, html {
 }
 
 .sources-body {
-	background: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)), url('../images/city.jpg');
+	background: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)), url('../images/city-bg.jpg');
 	background-size: cover;
 	background-position: center;
 	overflow-x: hidden;
@@ -23,25 +23,61 @@ header {
 	background-image: none;
 }
 
-h1 {
-	font-family: pf-videotext, sans-serif;
-	font-style: italic;
-	font-weight: bold;
-	font-size: 24px;
-	letter-spacing: -0.8px;
-	line-height: 1;
-	margin: 0;
+#intro-content {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	padding: 0;
+	display: flex;
+	align-items: center;
 }
 
-p {
-	font-family: "VT323", monospace;
+.intro-content-container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom: 0;
+}
+
+.misinformation {
+	width: 980px;
+	margin: auto;
+	padding: 30px;
+}
+
+.intro-content-container h1 {
+	padding-top: 30px;
+	font-family: "Nuetrina", sans-serif;
 	font-weight: 400;
-	font-size: 18px;
-	line-height: 18px;
-	letter-spacing: -0.6px;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	margin: 0;
+	font-size: 42px;
+	color: #FFCDE9;
+	text-shadow:
+      0 0 1px #f0f,
+      0 0 3px #f0f,
+      0 0 5px #f0f,
+      0 0 7px #f7a,
+      0 0 10px #f7a,
+      0 0 12px #f7a,
+      0 0 16px #f7a,
+      0 0 18px #f7a;
+}
+
+.misinformation p {
+	color: #FBFF3D;
+	text-align: justify;
+	font-size: 14px;
+	margin-top: 10px;
+}
+
+.misinformation h6 {
+	margin-top: 10px;
+	color: #FBFF3D;
+	font-style: italic;
+	text-align: left;
+	font-size: 12px;
+	font-weight: 300;
 }
 
 #sources {
@@ -57,9 +93,26 @@ p {
 	flex-direction: column;
 	align-items: center;
 	margin: auto;
-	margin-top: 80px;
+	margin-top: 40px;
 	margin-bottom: 40px;
 	padding: 20px;
+}
+
+.sources-maincontainer h2 {
+	padding-top: 10px;
+	font-family: "Nuetrina", sans-serif;
+	font-weight: 300;
+	font-size: 32px;
+	color: #FFCDE9;
+	text-shadow:
+      0 0 1px #f0f,
+      0 0 3px #f0f,
+      0 0 5px #f0f,
+      0 0 7px #f7a,
+      0 0 10px #f7a,
+      0 0 12px #f7a,
+      0 0 16px #f7a,
+      0 0 18px #f7a;
 }
 
 .source-blurb {
@@ -77,6 +130,27 @@ p {
 .source-text {
 	text-align: left;
 	padding: 20px;
+}
+
+.source-text h1 {
+	font-family: pf-videotext, sans-serif;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 24px;
+	letter-spacing: -0.8px;
+	line-height: 1;
+	margin: 0;
+}
+
+.source-text p {
+	font-family: "VT323", monospace;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 18px;
+	letter-spacing: -0.6px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin: 0;
 }
 
 .source-text a {
@@ -105,6 +179,18 @@ p {
 }
 
 @media screen and (max-width: 749px) {
+	#intro-content {
+		height: auto;
+	}
+	
+	.intro-content-container h1 {
+		font-size: 32px;
+		padding: 10px;
+		text-align: center;
+	}
+	
+	.intro-content-container,
+	.misinformation,
 	.sources-maincontainer,
 	.source-blurb {
 		width: 100%;

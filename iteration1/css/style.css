@@ -518,8 +518,8 @@ li a:active {
 	padding: 15px;
 	display: inline-block;
 	float: right;
-  margin-left: auto;
-  margin-top: 20px;
+	margin-left: auto;
+	margin-top: 20px;
 	transition-duration: 0.3s;
 }
 
@@ -540,38 +540,35 @@ li a:active {
 	width: 100%;
 	height: 100vh;
 	position: relative;
+	padding: 0;
+}
+
+.hp-comic-container {
 	display: flex;
-	align-items: center;
 	justify-content: center;
+	align-items: center;
 	margin: auto;
 	padding: 30px;
 }
 
-.hp-comic-container {
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: auto;
-}
-
-.comic-logo {
+.hp-comic-poster {
 	padding: 20px;
 	position: relative;
 	align-items: center;
 }
 
-.comic-logo img {
-	width: 70%;
-	float: right;
+.hp-comic-poster img {
+	width: 500px;
+	padding: 30px;
 }
 
 .hp-comic-desc-container{
+	width: 600px;
+	float: right;
 	display: flex;
 	flex-direction: column;
-	align-self: center;
-	padding-right: 150px;
-	margin: auto;
+	padding: 30px;
+	margin-left: 20px;
 }
 
 .hp-comic-desc-container p{
@@ -1011,7 +1008,7 @@ footer {
 	/* HP Comic */
 	
 	#hp-comic {
-		height: 100vh;
+		height: auto;
 	}
 
 	.hp-comic-container {
@@ -1022,11 +1019,20 @@ footer {
 	}
 
 	.hp-comic-desc-container {
-		display: flex;
-		flex-direction: column;
-		align-self: center;
+		width: 100%;
 		float: unset;
 		padding: 20px;
+		margin-left: 0;
+	}
+	
+	.hp-comic-poster {
+		margin-top: 40px;
+	}
+
+	.hp-comic-poster img {
+		width: 100%;
+		padding: 0;
+		margin: 0;
 	}
 	
 	.hp-comic-desc-container p {
