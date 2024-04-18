@@ -62,6 +62,7 @@
 							<iframe width="854" height="480" src="https://www.youtube.com/embed/LgNXK1z6Gck?si=p5jH9SwoRRQbRzmC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 							<div class="caption">
 								<h6>Directed and Edited by Cristina Isabelle Hernandez</h6>
+								<h6>Voiced by Jaime Antonio Fantillo & Gabriel Joseph Ochoa</h6>
 							</div>
 						</div>
 					</div>
@@ -71,10 +72,19 @@
 			<section id="posters">
 				<div class="posters-main-container">
 					<h1>illustrations</h1>
-					<div class="illustration">
-						<img src="images/cc-poster.png">
-						<div class="caption">
-							<h6>Art by Eche Cordero, Graphics by Nadiah Azman</h6>
+					<div class="illustration-container">
+						<div class="illustration">
+							<img src="images/cc-poster.png">
+							<div class="caption">
+								<h6>Art by Eche Cordero, Graphics by Nadiah Azman</h6>
+							</div>
+						</div>
+						
+						<div class="illustration">
+							<img src="images/comic-cover.jpg">
+							<div class="caption">
+								<h6>Art by Nadiah Azman</h6>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -87,15 +97,15 @@
 						<div class="character-sheet">
 							<img src="images/mc-turnaround.jpg">
 							<div class="character-bio">
-								<h2>MC/Player</h2>
-								<p>An intern at a newspaper company, Ynnovation X. Spends all day uncovering and correcting flawed online newspaper articles.</p>
+								<h2>Zero (MC/Player)</h2>
+								<p>An intern at a newspaper company, Chronicle Cipher. Spends all day uncovering and correcting flawed online newspaper articles.</p>
 							</div>
 						</div>
 						
 						<div class="character-sheet">
 							<img src="images/daniel-turnaround.jpg">
 							<div class="character-bio">
-								<h2>Daniel Perez</h2>						
+								<h2>Daniel Perez</h2>				
 								<p>A former computer engineer at Ynnovation X.</p>
 							</div>
 						</div>
@@ -104,7 +114,7 @@
 							<img src="images/rupert-turnaround.jpg">
 							<div class="character-bio">
 								<h2>Rupert Ramirez</h2>
-								<p>The MC's boss, and former manager at Ynnovation X.</p>
+								<p>The MC's boss, and former manager at Chronicle Cipher.</p>
 							</div>
 						</div>
 						
@@ -150,6 +160,34 @@
 							<img src="images/slums-bg.jpg">
 							<div class="caption">
 								<h6>Art by Eche Cordero</h6>
+							</div>
+						</div>
+						
+						<div class="artwork">
+							<img src="images/cafe.jpg">
+							<div class="caption">
+								<h6>Art by Hannah Sofia Bajar</h6>
+							</div>
+						</div>
+						
+						<div class="artwork">
+							<img src="images/bar.jpg">
+							<div class="caption">
+								<h6>Art by Hannah Sofia Bajar</h6>
+							</div>
+						</div>
+						
+						<div class="artwork">
+							<img src="images/apartment.jpg">
+							<div class="caption">
+								<h6>Art by Hannah Sofia Bajar</h6>
+							</div>
+						</div>
+						
+						<div class="artwork">
+							<img src="images/office.jpg">
+							<div class="caption">
+								<h6>Art by Hannah Sofia Bajar</h6>
 							</div>
 						</div>
 					</div>
@@ -198,6 +236,29 @@
 		    $('#myNav').toggleClass('visible');
 		  });
 		});
+	</script>
+	
+	<script>
+		$(document).ready(function(){
+	      $('.illustration-container').slick({
+	        slidesToShow: 1,
+	        slidesToScroll: 1,
+	        arrows: true,
+	        dots: true,
+	        speed: 500,
+	        infinite: true,
+	        autoplay: false,
+	        responsive: [
+		    {
+		      breakpoint: 749,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1,
+		      },
+		    },
+		  ],
+	      });
+	    });
 	</script>
 
 	<script>

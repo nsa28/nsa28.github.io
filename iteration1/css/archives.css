@@ -11,7 +11,7 @@ body, html {
 }
 
 .archives-body {
-	background: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)), url('../images/city.jpg');
+	background: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)), url('../images/city-bg.jpg');
 	background-size: cover;
 	background-position: center;
 	overflow-x: hidden;
@@ -160,6 +160,7 @@ p {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 	margin: auto;
 	margin-top: 80px;
 	margin-bottom: 40px;
@@ -168,8 +169,8 @@ p {
 
 
 @media screen and (min-width: 750px) {
-	.poster-container {
-		width: 800px;
+	.illustration-container {
+		width: 565px;
 		margin: auto;
 	}
 }
@@ -180,7 +181,8 @@ p {
 	margin: auto;
 	display: flex;
 	flex-direction: column;
-	align-items: center
+	align-items: center !important;
+	justify-content: center !important;
 }
 
 .illustration img {
@@ -278,7 +280,7 @@ p {
 }
 
 .artwork img {
-	width: 1030px;
+	width: 100%;
 }
 
 h6 {
