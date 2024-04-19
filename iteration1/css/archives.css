@@ -98,7 +98,6 @@ p {
 }
 
 .caption-teaser {
-	width: 800px;
 	text-align: center;
 }
 
@@ -190,7 +189,6 @@ p {
 }
 
 .caption {
-	width: 600px;
 	text-align: center;
 	padding: 30px;
 }
@@ -276,7 +274,8 @@ p {
 	margin: auto;
 	display: flex;
 	flex-direction: column;
-	align-items: center !important; 
+	align-items: center !important;
+	justify-content: center;
 }
 
 .artwork img {
@@ -301,6 +300,7 @@ h6 {
 	.teaser,
 	.caption-teaser,
 	.posters-main-container,
+	.illustration-container,
 	.illustration,
 	.illustration img,
 	.archives-characters-container,
@@ -311,5 +311,18 @@ h6 {
 	.concept-art-container,
 	.artwork img {
 		width: 100%;
+	}
+	
+	h1 {
+		font-size: 24px;
+		text-align: center;
+	}
+	
+	h6 {
+		font-size: 12px;
+	}
+	
+	p {
+		font-size: 14px;
 	}
 }
