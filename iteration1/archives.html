@@ -40,6 +40,37 @@
 		</header>
 		
 		<main>
+			<section id="screenshots">
+				<div class="game-sc-main-container">
+					<h1>game screenshots</h1>
+					<div class="screenshot-container">
+						<div class="screenshot">
+							<img src="images/sc-one.jpg">
+						</div>
+						
+						<div class="screenshot">
+							<img src="images/sc-two.jpg">
+						</div>
+						
+						<div class="screenshot">
+							<img src="images/sc-three.jpg">
+						</div>
+						
+						<div class="screenshot">
+							<img src="images/sc-four.jpg">
+						</div>
+						
+						<div class="screenshot">
+							<img src="images/sc-five.jpg">
+						</div>
+						
+						<div class="screenshot">
+							<img src="images/sc-six.jpg">
+						</div>
+					</div>
+				</div>
+			</section>
+			
 			<section id="animation">
 				<div class="animation-main-container">
 					<h1>animation teaser</h1>
@@ -190,6 +221,20 @@
 								<h6>Art by Hannah Sofia Bajar</h6>
 							</div>
 						</div>
+						
+						<div class="artwork">
+							<img src="images/day-map.png">
+							<div class="caption">
+								<h6>Art by Pau Alejandrino</h6>
+							</div>
+						</div>
+						
+						<div class="artwork">
+							<img src="images/night-map.png">
+							<div class="caption">
+								<h6>Art by Pau Alejandrino</h6>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -236,6 +281,20 @@
 		    $('#myNav').toggleClass('visible');
 		  });
 		});
+	</script>
+	
+	<script>
+		$(document).ready(function(){
+	      $('.screenshot-container').slick({
+	        slidesToShow: 1,
+	        slidesToScroll: 1,
+	        arrows: true,
+	        dots: true,
+	        speed: 500,
+	        infinite: true,
+	        autoplay: false,
+	      });
+	    });
 	</script>
 	
 	<script>
