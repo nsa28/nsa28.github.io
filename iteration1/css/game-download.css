@@ -83,7 +83,6 @@ h4 {
 }
 
 .game-installation-container {
-	float: top;
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
@@ -92,7 +91,7 @@ h4 {
 
 .game-install-step {
 	height: 150px;
-	width: 220px;
+	width: 300px;
 	float: left;
 	position: relative;
 	background-color: #F4FBFF;
@@ -109,7 +108,7 @@ h4 {
 .game-install-step h3 {
 	font-family: "pf-videotext", sans-serif;
 	font-weight: 400;
-	margin: 20px 0 0 0;
+	margin: 10px;
 }
 
 @media screen and (max-width: 749px) {
