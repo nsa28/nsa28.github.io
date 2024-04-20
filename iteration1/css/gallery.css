@@ -10,7 +10,7 @@ body, html {
 	overflow-x: hidden;
 }
 
-.archives-body {
+.gallery-body {
 	background: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)), url('../images/city-bg.jpg');
 	background-size: cover;
 	background-position: center;
