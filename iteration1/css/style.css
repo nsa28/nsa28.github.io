@@ -8,6 +8,7 @@ body, html {
 	height: 100%;
 	width: 100%;
 	overflow-x: hidden;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -264,7 +265,6 @@ li a:active {
 .hp-about-container img {
 	width: 400px;
 	margin: 20px;
-	margin-top: 0;
 	padding-bottom: 30px;
 }
 
