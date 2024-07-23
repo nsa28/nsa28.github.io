@@ -1,0 +1,355 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+#about-lp {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	padding: 0;
+	display: flex;
+	align-items: center;
+}
+
+.about-lp-container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom: 0;
+}
+
+.about-lp-container img {
+	width: 30%;
+}
+
+.about-lp-bio-container {
+	width: 980px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin: auto;
+	padding: 30px;
+}
+
+.about-lp-bio-container p {
+	color: #FBFF3D;
+	text-align: justify;
+	font-size: 14px;
+	margin-top: 10px;
+}
+
+.about-comic-link {
+	display: inline-block;
+	position: relative;
+	color: #FF6EC0;
+	text-decoration: none;
+}
+
+.about-comic-link:after {
+	content: '';
+	position: absolute;
+	transform: scaleX(0);
+	width: 100%;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #FF6EC0;
+	transform-origin: right;
+	transition: transform 0.25s ease-out;
+}
+
+.about-comic-link:visited {
+	text-decoration: none;
+}
+
+.about-comic-link:hover:after {
+	transform: scaleX(1);
+	transform-origin: left;
+}
+
+.about-wbwwb-link {
+	display: inline-block;
+	position: relative;
+	color: #FF6EC0;
+	text-decoration: none;
+}
+
+.about-wbwwb-link:after {
+	content: '';
+	position: absolute;
+	transform: scaleX(0);
+	width: 100%;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #FF6EC0;
+	transform-origin: right;
+	transition: transform 0.25s ease-out;
+}
+
+.about-wbwwb-link:visited {
+	text-decoration: none;
+}
+
+.about-wbwwb-link:hover:after {
+	transform: scaleX(1);
+	transform-origin: left;
+}
+
+#intro-content {
+	width: 100%;
+	position: relative;
+	padding: 0;
+	display: flex;
+	align-items: center;
+}
+
+.intro-content-container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin: auto;
+	padding: 30px;
+}
+
+.misinformation {
+	width: 980px;
+	margin: auto;
+	padding: 30px;
+}
+
+.intro-content-container h1 {
+	padding-top: 30px;
+	font-family: "Nuetrina", sans-serif;
+	font-weight: 400;
+	font-size: 42px;
+	color: #FFCDE9;
+	text-shadow:
+      0 0 1px #f0f,
+      0 0 3px #f0f,
+      0 0 5px #f0f,
+      0 0 7px #f7a,
+      0 0 10px #f7a,
+      0 0 12px #f7a,
+      0 0 16px #f7a,
+      0 0 18px #f7a;
+}
+
+.misinformation p {
+	color: #FBFF3D;
+	text-align: justify;
+	font-size: 14px;
+	margin-top: 10px;
+}
+
+.misinformation h6 {
+	margin-top: 10px;
+	color: #FBFF3D;
+	font-style: italic;
+	text-align: left;
+	font-size: 12px;
+	font-weight: 300;
+}
+
+.about-thesis {
+	width: 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	margin: auto;
+}
+
+.about-thesis a {
+	background-color: #180C7D;
+	font-family: "Nuetrina", sans-serif;
+	font-size: 24px;
+	color: #FBFF3D;
+	text-decoration: none;
+	text-align: center;
+	padding: 20px 45px ;
+	display: inline-block;
+	transition-duration: 0.3s;
+}
+
+.about-thesis a:hover {
+	background: #F4FBFF;
+	border: 3px solid #180C7D;
+	color: #180C7D;
+}
+
+.about-thesis a:active {
+	background-color: #180C7D;
+	color: #FBFF3D;
+}
+
+/* ABOUT TEAM */
+
+#about-team {
+	width: 100%;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+.about-team-maincontainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	padding: 30px;
+	position: relative;
+}
+
+.about-team-title {
+	font-family: "Nuetrina", sans-serif;
+	font-weight: 400;
+	font-size: 42px;
+	color: #FFCDE9;
+	text-shadow:
+      0 0 1px #f0f,
+      0 0 3px #f0f,
+      0 0 5px #f0f,
+      0 0 7px #f7a,
+      0 0 10px #f7a,
+      0 0 12px #f7a,
+      0 0 16px #f7a,
+      0 0 18px #f7a;
+}
+
+.about-team-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	margin: auto;
+	z-index: 1;
+}
+
+.about-team-member {
+	padding: 30px;
+	float: left;
+	color: #FFCDE9;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-items: space-between;
+	z-index: 1;
+}
+
+.about-team-member h2 {
+	font-family: "Nuetrina", sans-serif;
+	letter-spacing: 1px;
+	font-size: 22px;
+	margin: 20px 0 0 0;
+	color: #C7F7FF;
+	text-shadow:
+      0 0 1px #0027FF,
+      0 0 3px #0027FF,
+      0 0 5px #0027FF,
+      0 0 7px #0027FF,
+      0 0 9px #83EEFF,
+      0 0 10px #83EEFF;
+}
+
+ul.roles {
+	list-style-type: none;
+	float: left;
+	padding: 0;
+	font-family: 'pf-videotext', sans-serif;
+	color: #FBFF3D;
+	font-size: 14px;
+	font-weight: 400;
+	float: left;
+}
+
+.team-member-contact {
+	float: left;
+	width: 100%;
+	position: relative;
+}
+
+.team-member-contact img {
+	float: left;
+	width: 30px;
+	filter: invert(1);
+	padding: 10px;
+	padding-left: 0;
+}
+
+#docu {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	padding: 50px;
+	z-index: 1
+}
+
+.docu-vid {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	padding: 30px;
+	z-index: 1;
+}
+
+@media screen and (max-width: 749px) {
+	#about-lp {
+		height: auto;
+	}
+
+	.about-lp-container,
+	.about-lp-bio-container,
+	.intro-content-container,
+	.misinformation,
+	.about-team-maincontainer {
+		width: 100%;
+	}
+
+	.about-lp-container img {
+		width: 60%;
+	}
+
+	.about-team-container {
+		flex-direction: column;
+	}
+	
+	#intro-content {
+		height: auto;
+	}
+	
+	.intro-content-container h1 {
+		font-size: 32px;
+		padding: 10px;
+		text-align: center;
+	}
+	
+		/* Docu */
+	#docu {
+		height: 65vh;
+	}
+
+	.docu-vid {
+		padding: 0;
+		margin: 0;
+	}
+
+	iframe {
+		width: 100% !important;
+		height: auto !important;
+	}
+}

@@ -1,0 +1,115 @@
+#game-download-lp {
+	width: 100%;
+	height: 120vh;
+	position: relative;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.game-download-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	padding: 30px;
+	padding-top: 70px;
+}
+
+.game-download-container img {
+	width: 600px;
+}
+
+.game-download-container h1 a {
+	background: none;
+	font-family: "Nuetrina", sans-serif;
+	font-size: 42px;
+	color: #FF6EC0;
+	text-decoration: none;
+	transition-duration: 0.03s;
+	padding-top: 30px;
+}
+
+.game-download-container h1 a:hover {
+  color: #FFCDE9;
+  text-shadow:
+      0 0 1px #f0f,
+	  0 0 3px #f0f,
+      0 0 5px #f0f,
+      0 0 7px #f7a,
+      0 0 10px #f7a,
+      0 0 12px #f7a,
+      0 0 16px #f7a,
+      0 0 18px #f7a;
+}
+
+h4 {
+	font-weight: 400;
+	color: #FBFF3D;
+}
+
+#game-installation {
+	width: 100%;
+	position: relative;
+	padding: 0;
+	display: flex;
+	align-items: center;
+}
+
+.game-installation-maincontainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	padding: 30px;
+	z-index: 100;
+}
+
+.game-install-title {
+	font-family: "Nuetrina", sans-serif;
+	font-size: 42px;
+	color: #FFCDE9;
+	text-shadow:
+      0 0 1px #f0f,
+      0 0 3px #f0f,
+      0 0 5px #f0f,
+      0 0 7px #f7a,
+      0 0 10px #f7a,
+      0 0 12px #f7a,
+      0 0 16px #f7a,
+      0 0 18px #f7a;
+}
+
+.game-installation-container {
+	float: top;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	margin: auto;
+	z-index: 100;
+}
+
+.game-install-step {
+	height: 100px;
+	width: 220px;
+	float: left;
+	position: relative;
+	background-color: #F4FBFF;
+	border: 4px solid #FF6EC0;
+	padding: 20px;
+	margin: 20px;
+	display: flex;
+}
+
+.game-install-step img {
+	padding-bottom: 0px;
+}
+
+.game-install-step h3 {
+	font-family: "pf-videotext", sans-serif;
+	font-weight: 400;
+	margin: 20px 0 0 0;
+}
