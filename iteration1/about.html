@@ -3,7 +3,8 @@
 	<head>
 		<title>about the project</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0">
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 		<link href="https://fonts.cdnfonts.com/css/nuetrina" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.typekit.net/ocj4qzf.css">
 		<link rel="stylesheet" href="css/style.css" type="text/css" />
@@ -11,22 +12,23 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 	</head>
 	<body>
 		<header>
-			<nav>
-				<div class="nav-wrapper">
-					<a href="javascript:void(0);" class="icon" onclick="hamburger()"><i class="fa fa-bars"></i></a>
-					<img src="images/cc-logo.png">
-					<!-- <i class="fa fa-[cc favicon]"></i> -->
-				</div>
+			<div id="hamburger">
+				<span></span>
+				<span></span>
+				<span></span>  
+			</div>
+			<nav id="myNav" class="nav">
 				<ul>
 					<li><a href="index.html">home</a></li>
 					<li><a href="about.html">about</a></li>
 					<li><a href="comic.html">comic</a></li>
-					<li><a href="archives.html">archives</a></li>
+					<li><a href="gallery.html">gallery</a></li>
 					<li><a href="game-download.html">download</a></li>
-					<li><a href="forum.html">forum</a></li>
+					<li><a href="discussion.html">discussion</a></li>
 					<li><a href="sources.html">sources</a></li>
 				</ul>
 			</nav>
@@ -40,6 +42,24 @@
 						<p>Chronicle Cipher is a project about misinformation. In the RPG, you step into a dystopian future with the consequences of an epidemic of deception. Playing as an intern at a newspaper company, uncovering and correcting flaws of newspaper articles online. The project serves a video game as an interactive and effective tool to raise awareness on this issue. Read the game’s prequel comic <a href="comic.html" class="about-comic-link" target="_blank">here</a>.</p>
 						<p>Chronicle Cipher actively promotes cooperation, media literacy and critical thinking in the fight against false information. With a generation reliant on technology, it aims to establish a safe and varied setting to encourage mindful gaming.</p>
 						<p>Our research was initially a case study on how video games can be used as tools for activism to spread awareness on world issues. The study was based on the online browser game <a href="https://ncase.itch.io/wbwwb" class="about-wbwwb-link" target="_blank"><i>'We Become What We Behold'</i></a> by Nick Case. With this, Chronicle Cipher was made, a project with a video game tackling misinformation.</p>
+					</div>
+				</div>
+			</section>
+			
+			<section id="intro-content">
+				<div class="intro-content-container">
+					<h1>what is misinformation?</h1>
+					<div class="misinformation" id="one">
+						<p>Misinformation happens when incorrect information spreads, often unintentionally, because it isn't based on facts. This can happen due to unreliable speculation or other factors, rather than any malicious intent.</p>
+						<h6>[Miguel, A.M., Mamintod, D.C., Salik, R.M., Salipada, M., Faller, E.M. (2022). The Battle on Fake News: A Qualitative Study on Misinformation on Vaccination among the Residents of Surallah, Philippines. The Scientific World Journal. 10(3). 1434-1449.]</h6>
+						<p>Misinformation is a tricky problem with wide-reaching effects, influencing how people see things and even affecting the way we make decisions and connect with each other. There's this interesting thing called the 'continued influence effect,' which means that even after being set straight, people might still be influenced by the misinformation they encountered.</p>
+						<h6>[Ecker, U. K. H., Lewandowsky, S., Cook, J., Schmid, P., Fazio, L. K., Brashier, N. M., Kendeou, P., Vraga, E. K., & Amazeen, M. A. (2022). The psychological drivers of misinformation belief and its resistance to correction. Nature Reviews Psychology, 1(1), 13–29.]</h6>
+					</div>
+					<h1>Misinformation in the Philippines</h1>
+					<div class="misinformation" id="two">
+						<p>A Facebook official has named the Philippines "Patient Zero", meaning that it was the first one to cause an outbreak of the global disinformation pandemic due to the extraordinary amount of misinformation that was spread during the 2016 Philippine elections. From that case, fact-checking or verification has gained popularity in Media and Information Literacy (MIL).</p>
+						<p>We should encourage the idea of Media and Information Literacy (MIL) as an ongoing learning experience, making it a valuable part of both alternative learning systems and regular education, especially in senior high school.</p>
+						<h6>[Chua, T., & Khan, E. (2023). Countering disinformation tools and initiatives in the Philippines. International Media Support.]</h6>
 					</div>
 					<div class="about-thesis">
 						<a href="https://docs.google.com/document/d/1FNQGKCgeLqteQAF_n4I6t9E4uhfOzqBDvvx_Y5xwG6Y/edit?usp=drive_link" target="_blank">read our case study</a>
@@ -56,12 +76,14 @@
 							<h2>Pau Alejandrino</h2>
 							<ul class="roles">
 								<li>Writer</li>
-								<li>Game Director</li>
+								<li>Game Developer</li>
 								<li>Game Designer</li>
-								<li>Comic - Rendering</li>
+								<li>Comic & Animation - Coloring</li>
 							</ul>
 							<div class="team-member-contact" id="pau">
-								<img src="images/icons/email-icon.svg">
+								<a href="mailto:josepaolo.alejandrino@benilde.edu.ph" target="_blank">
+									<img src="images/icons/email-icon.svg">
+								</a>
 							</div>
 						</div>
 						<div class="about-team-member" id="nad">
@@ -74,8 +96,12 @@
 								<li>Comic Cover Artist</li>
 							</ul>
 							<div class="team-member-contact" id="nad">
-								<img src="images/icons/email-icon.svg">
-								<img src="images/icons/instagram-icon.svg">
+								<a href="mailto:nadiahsyaza.azman@benilde.edu.ph" target="_blank">
+									<img src="images/icons/email-icon.svg">
+								</a>
+								<a href="https://instagram.com/monadchi" target="_blank">
+									<img src="images/icons/instagram-icon.svg">
+								</a>
 							</div>
 						</div>
 						<div class="about-team-member" id="hannah">
@@ -85,10 +111,12 @@
 								<li>Website Designer</li>
 								<li>Assets Artist</li>
 								<li>Documentary - Assistant</li>
+								<li>Social Media Manager</li>
 							</ul>
 							<div class="team-member-contact" id="hannah">
-								<img src="images/icons/email-icon.svg">
-								<img src="images/icons/instagram-icon.svg">
+								<a href="mailto:hannahsofia.bajar@benilde.edu.ph" target="_blank">
+									<img src="images/icons/email-icon.svg">
+								</a>
 							</div>
 						</div>
 						<div class="about-team-member" id="eche">
@@ -101,8 +129,9 @@
 								<li>Storyboarding</li>
 							</ul>
 							<div class="team-member-contact" id="eche">
-								<img src="images/icons/email-icon.svg">
-								<img src="images/icons/instagram-icon.svg">
+								<a href="mailto:eche.cordero@benilde.edu.ph" target="_blank">
+									<img src="images/icons/email-icon.svg">
+								</a>
 							</div>
 						</div>
 						<div class="about-team-member" id="ishi">
@@ -111,15 +140,22 @@
 							<ul class="roles">
 								<li>Writer</li>
 								<li>Game Designer</li>
-								<li>Storyboarding</li>
 								<li>Documentary - Director & Editor</li>
+								<li>Animation - Coloring</li>
 							</ul>
 							<div class="team-member-contact" id="ishi">
-								<img src="images/icons/email-icon.svg">
-								<img src="images/icons/instagram-icon.svg">
+								<a href="mailto:cristinaisabelle.hernandez@benilde.edu.ph" target="_blank">
+									<img src="images/icons/email-icon.svg">
+								</a>
 							</div>
 						</div>
 					</div>
+				</div>
+			</section>
+			
+			<section id="docu">
+				<div class="docu-vid">
+					<iframe width="720" height="405" src="https://www.youtube.com/embed/LgNXK1z6Gck?si=p5jH9SwoRRQbRzmC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 				</div>
 			</section>
 		</main>
@@ -129,6 +165,9 @@
 					<img src="images/cc-logo.png">
 				</div>
 				<div class="footer-links-container">
+					<a href="https://www.facebook.com/profile.php?id=61558420950930" target="_blank">
+						<img src="images/icons/facebook-icon.svg">
+					</a>
 					<a href="https://twitter.com/ChronicleCipher" target="_blank">
 						<img src="images/icons/x-icon.svg">
 					</a>
@@ -141,14 +180,23 @@
 						<li><a href="index.html">home</a></li>
 						<li><a href="about.html">about</a></li>
 						<li><a href="comic.html">comic</a></li>
-						<li><a href="archives.html">archives</a></li>
+						<li><a href="gallery.html">gallery</a></li>
 						<li><a href="game-download.html">download</a></li>
-						<li><a href="forum.html">forum</a></li>
+						<li><a href="discussion.html">discussion</a></li>
 						<li><a href="sources.html">sources</a></li>
 					</ul>
 				</nav>
 				<p>Copyright 2024 - The Chronicle Cipher Team. DLS-CSB Multimedia Arts Capstone. Web Development by Nadiah Azman. Hosted on Github.</p>
 			</div>
 		</footer>
+
+		<script>
+			$(document).ready(function(){
+			  $('#hamburger').on('click', function() {
+			    $(this).toggleClass('close');
+			    $('#myNav').toggleClass('visible');
+			  });
+			});
+		</script>
 	</body>
 </html>

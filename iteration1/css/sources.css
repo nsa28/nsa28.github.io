@@ -1,5 +1,17 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+}
+
 .sources-body {
-	background: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)), url('../images/city.jpg');
+	background: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)), url('../images/city-bg.jpg');
 	background-size: cover;
 	background-position: center;
 	overflow-x: hidden;
@@ -9,27 +21,6 @@
 
 header {
 	background-image: none;
-}
-
-h1 {
-	font-family: pf-videotext, sans-serif;
-	font-style: italic;
-	font-weight: bold;
-	font-size: 24px;
-	letter-spacing: -0.8px;
-	line-height: 1;
-	margin: 0;
-}
-
-p {
-	font-family: "VT323", monospace;
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 18px;
-	letter-spacing: -0.6px;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	margin: 0;
 }
 
 #sources {
@@ -45,9 +36,26 @@ p {
 	flex-direction: column;
 	align-items: center;
 	margin: auto;
-	margin-top: 80px;
+	margin-top: 40px;
 	margin-bottom: 40px;
 	padding: 20px;
+}
+
+.sources-maincontainer h2 {
+	padding-top: 10px;
+	font-family: "Nuetrina", sans-serif;
+	font-weight: 300;
+	font-size: 32px;
+	color: #FFCDE9;
+	text-shadow:
+      0 0 1px #f0f,
+      0 0 3px #f0f,
+      0 0 5px #f0f,
+      0 0 7px #f7a,
+      0 0 10px #f7a,
+      0 0 12px #f7a,
+      0 0 16px #f7a,
+      0 0 18px #f7a;
 }
 
 .source-blurb {
@@ -65,6 +73,27 @@ p {
 .source-text {
 	text-align: left;
 	padding: 20px;
+}
+
+.source-text h1 {
+	font-family: pf-videotext, sans-serif;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 24px;
+	letter-spacing: -0.8px;
+	line-height: 1;
+	margin: 0;
+}
+
+.source-text p {
+	font-family: "VT323", monospace;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 18px;
+	letter-spacing: -0.6px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin: 0;
 }
 
 .source-text a {
@@ -90,4 +119,11 @@ p {
 .source-text a:active {
 	background-color: #180C7D;
 	color: #FBFF3D;
+}
+
+@media screen and (max-width: 749px) {
+	.sources-maincontainer,
+	.source-blurb {
+		width: 100%;
+	}
 }
