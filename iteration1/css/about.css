@@ -1,3 +1,15 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+}
+
 #about-lp {
 	width: 100%;
 	height: 100vh;
@@ -92,6 +104,61 @@
 .about-wbwwb-link:hover:after {
 	transform: scaleX(1);
 	transform-origin: left;
+}
+
+#intro-content {
+	width: 100%;
+	position: relative;
+	padding: 0;
+	display: flex;
+	align-items: center;
+}
+
+.intro-content-container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin: auto;
+	padding: 30px;
+}
+
+.misinformation {
+	width: 980px;
+	margin: auto;
+	padding: 30px;
+}
+
+.intro-content-container h1 {
+	padding-top: 30px;
+	font-family: "Nuetrina", sans-serif;
+	font-weight: 400;
+	font-size: 42px;
+	color: #FFCDE9;
+	text-shadow:
+      0 0 1px #f0f,
+      0 0 3px #f0f,
+      0 0 5px #f0f,
+      0 0 7px #f7a,
+      0 0 10px #f7a,
+      0 0 12px #f7a,
+      0 0 16px #f7a,
+      0 0 18px #f7a;
+}
+
+.misinformation p {
+	color: #FBFF3D;
+	text-align: justify;
+	font-size: 14px;
+	margin-top: 10px;
+}
+
+.misinformation h6 {
+	margin-top: 10px;
+	color: #FBFF3D;
+	font-style: italic;
+	text-align: left;
+	font-size: 12px;
+	font-weight: 300;
 }
 
 .about-thesis {
@@ -214,8 +281,75 @@ ul.roles {
 
 .team-member-contact img {
 	float: left;
-	width: 20px;
+	width: 30px;
 	filter: invert(1);
 	padding: 10px;
 	padding-left: 0;
+}
+
+#docu {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	padding: 50px;
+	z-index: 1
+}
+
+.docu-vid {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	padding: 30px;
+	z-index: 1;
+}
+
+@media screen and (max-width: 749px) {
+	#about-lp {
+		height: auto;
+	}
+
+	.about-lp-container,
+	.about-lp-bio-container,
+	.intro-content-container,
+	.misinformation,
+	.about-team-maincontainer {
+		width: 100%;
+	}
+
+	.about-lp-container img {
+		width: 60%;
+	}
+
+	.about-team-container {
+		flex-direction: column;
+	}
+	
+	#intro-content {
+		height: auto;
+	}
+	
+	.intro-content-container h1 {
+		font-size: 32px;
+		padding: 10px;
+		text-align: center;
+	}
+	
+		/* Docu */
+	#docu {
+		height: 65vh;
+	}
+
+	.docu-vid {
+		padding: 0;
+		margin: 0;
+	}
+
+	iframe {
+		width: 100% !important;
+		height: auto !important;
+	}
 }

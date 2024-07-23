@@ -3,7 +3,8 @@
 	<head>
 		<title>re:Chronicle Cipher</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0">
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 		<link href="https://fonts.cdnfonts.com/css/nuetrina" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.typekit.net/ocj4qzf.css">
 		<link rel="stylesheet" href="css/style.css" type="text/css" />
@@ -11,22 +12,23 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 	</head>
 	<body>
-		<header class="comicHeader">
-			<nav class="comicHeader">
-				<div class="nav-wrapper">
-					<a href="javascript:void(0);" class="icon" onclick="hamburger()"><i class="fa fa-bars"></i></a>
-					<img src="images/cc-logo.png">
-					<!-- <i class="fa fa-[cc favicon]"></i> -->
-				</div>
-				<ul class="comicHeader">
+		<header>
+			<div id="hamburger">
+				<span></span>
+				<span></span>
+				<span></span>  
+			</div>
+			<nav id="myNav" class="nav">
+				<ul>
 					<li><a href="index.html">home</a></li>
 					<li><a href="about.html">about</a></li>
 					<li><a href="comic.html">comic</a></li>
-					<li><a href="archives.html">archives</a></li>
+					<li><a href="gallery.html">gallery</a></li>
 					<li><a href="game-download.html">download</a></li>
-					<li><a href="forum.html">forum</a></li>
+					<li><a href="discussion.html">discussion</a></li>
 					<li><a href="sources.html">sources</a></li>
 				</ul>
 			</nav>
@@ -35,6 +37,7 @@
 		<main>
 			<section id="comic">
 				<div class="panels">
+					<img src="images/comic/0.png">
 					<img src="images/comic/1.png">
 					<img src="images/comic/2.png">
 					<img src="images/comic/3.png">
@@ -104,6 +107,9 @@
 					<img src="images/cc-logo.png">
 				</div>
 				<div class="footer-links-container">
+					<a href="https://www.facebook.com/profile.php?id=61558420950930" target="_blank">
+						<img src="images/icons/facebook-icon.svg">
+					</a>
 					<a href="https://twitter.com/ChronicleCipher" target="_blank">
 						<img src="images/icons/x-icon.svg">
 					</a>
@@ -116,14 +122,23 @@
 						<li><a href="index.html">home</a></li>
 						<li><a href="about.html">about</a></li>
 						<li><a href="comic.html">comic</a></li>
-						<li><a href="archives.html">archives</a></li>
+						<li><a href="gallery.html">gallery</a></li>
 						<li><a href="game-download.html">download</a></li>
-						<li><a href="forum.html">forum</a></li>
+						<li><a href="discussion.html">discussion</a></li>
 						<li><a href="sources.html">sources</a></li>
 					</ul>
 				</nav>
 				<p>Copyright 2024 - The Chronicle Cipher Team. DLS-CSB Multimedia Arts Capstone. Web Development by Nadiah Azman. Hosted on Github.</p>
 			</div>
 		</footer>
+
+		<script>
+		$(document).ready(function(){
+		  $('#hamburger').on('click', function() {
+		    $(this).toggleClass('close');
+		    $('#myNav').toggleClass('visible');
+		  });
+		});
+		</script>
 	</body>
 </html>
