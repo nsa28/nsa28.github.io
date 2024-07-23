@@ -1,0 +1,93 @@
+.sources-body {
+	background: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)), url('../images/city.jpg');
+	background-size: cover;
+	background-position: center;
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-image: none;
+}
+
+h1 {
+	font-family: pf-videotext, sans-serif;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 24px;
+	letter-spacing: -0.8px;
+	line-height: 1;
+	margin: 0;
+}
+
+p {
+	font-family: "VT323", monospace;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 18px;
+	letter-spacing: -0.6px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin: 0;
+}
+
+#sources {
+	width: 100%;
+	position: relative;
+	padding: 0;
+	display: flex;
+	align-items: center;
+}
+
+.sources-maincontainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: auto;
+	margin-top: 80px;
+	margin-bottom: 40px;
+	padding: 20px;
+}
+
+.source-blurb {
+	width: 980px;
+	background-color: #F4FBFF;
+	border: 4px solid #FF6EC0;
+	position: relative;
+	padding: 20px;
+	margin: 20px;
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+}
+
+.source-text {
+	text-align: left;
+	padding: 20px;
+}
+
+.source-text a {
+	background-color: #180C7D;
+	font-family: pf-videotext, sans-serif;
+	font-size: 18px;
+	color: #FBFF3D;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	padding: 10px 20px;
+	display: inline-block;
+	position: relative;
+	transition-duration: 0.3s;
+}
+
+.source-text a:hover {
+	background: #F4FBFF;
+	border: 3px solid #180C7D;
+	color: #180C7D;
+}
+
+.source-text a:active {
+	background-color: #180C7D;
+	color: #FBFF3D;
+}

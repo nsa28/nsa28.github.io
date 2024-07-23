@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>re:Chronicle Cipher</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.cdnfonts.com/css/nuetrina" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.typekit.net/ocj4qzf.css">
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<link rel="stylesheet" href="css/read-comic.css" type="text/css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header class="comicHeader">
+			<nav class="comicHeader">
+				<div class="nav-wrapper">
+					<a href="javascript:void(0);" class="icon" onclick="hamburger()"><i class="fa fa-bars"></i></a>
+					<img src="images/cc-logo.png">
+					<!-- <i class="fa fa-[cc favicon]"></i> -->
+				</div>
+				<ul class="comicHeader">
+					<li><a href="index.html">home</a></li>
+					<li><a href="about.html">about</a></li>
+					<li><a href="comic.html">comic</a></li>
+					<li><a href="archives.html">archives</a></li>
+					<li><a href="game-download.html">download</a></li>
+					<li><a href="forum.html">forum</a></li>
+					<li><a href="sources.html">sources</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<main>
+			<section id="comic">
+				<div class="panels">
+					<img src="images/comic/1.png">
+					<img src="images/comic/2.png">
+					<img src="images/comic/3.png">
+					<img src="images/comic/4.png">
+					<img src="images/comic/5.png">
+					<img src="images/comic/6.png">
+					<img src="images/comic/7.png">
+					<img src="images/comic/8.png">
+					<img src="images/comic/9.png">
+					<img src="images/comic/10.png">
+					<img src="images/comic/11.png">
+					<img src="images/comic/12.png">
+					<img src="images/comic/13.png">
+					<img src="images/comic/14.png">
+					<img src="images/comic/15.png">
+					<img src="images/comic/16.png">
+					<img src="images/comic/17.png">
+					<img src="images/comic/18.png">
+					<img src="images/comic/19.png">
+					<img src="images/comic/20.png">
+					<img src="images/comic/21.png">
+					<img src="images/comic/22.png">
+					<img src="images/comic/23.png">
+					<img src="images/comic/24.png">
+					<img src="images/comic/25.png">
+					<img src="images/comic/26.png">
+					<img src="images/comic/27.png">
+					<img src="images/comic/28.png">
+					<img src="images/comic/29.png">
+					<img src="images/comic/30.png">
+					<img src="images/comic/31.png">
+					<img src="images/comic/32.png">
+					<img src="images/comic/33.png">
+					<img src="images/comic/34.png">
+					<img src="images/comic/35.png">
+					<img src="images/comic/36.png">
+				</div>
+				
+				<button onclick="topFunction()" id="myBtn" title="Go to top">back to top</button>
+				
+				<script>
+					let mybutton = document.getElementById("myBtn");
+
+					// When the user scrolls down 20px from the top of the document, show the button
+					window.onscroll = function() {scrollFunction()};
+
+					function scrollFunction() {
+					  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+						mybutton.style.display = "block";
+					  } else {
+						mybutton.style.display = "none";
+					  }
+					}
+
+					// When the user clicks on the button, scroll to the top of the document
+					function topFunction() {
+					  document.body.scrollTop = 0; // For Safari
+					  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+					}
+				</script>
+			</section>
+		</main>
+		
+		<footer>
+			<div class="footer-container">
+				<div class="footer-logo">
+					<img src="images/cc-logo.png">
+				</div>
+				<div class="footer-links-container">
+					<a href="https://twitter.com/ChronicleCipher" target="_blank">
+						<img src="images/icons/x-icon.svg">
+					</a>
+					<a href="mailto:chroniclecipher@gmail.com" target="_blank">
+						<img src="images/icons/email-icon.svg">
+					</a>
+				</div>
+				<nav class="footer-nav-container">
+					<ul>
+						<li><a href="index.html">home</a></li>
+						<li><a href="about.html">about</a></li>
+						<li><a href="comic.html">comic</a></li>
+						<li><a href="archives.html">archives</a></li>
+						<li><a href="game-download.html">download</a></li>
+						<li><a href="forum.html">forum</a></li>
+						<li><a href="sources.html">sources</a></li>
+					</ul>
+				</nav>
+				<p>Copyright 2024 - The Chronicle Cipher Team. DLS-CSB Multimedia Arts Capstone. Web Development by Nadiah Azman. Hosted on Github.</p>
+			</div>
+		</footer>
+	</body>
+</html>

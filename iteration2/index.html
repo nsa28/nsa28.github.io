@@ -1,0 +1,369 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>CHRONICLE CIPHER</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0">
+		<link href="https://fonts.cdnfonts.com/css/nuetrina" rel="stylesheet">
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+		<link rel="stylesheet" href="https://use.typekit.net/ocj4qzf.css">
+		<link rel="stylesheet" href="css/98.css" type="text/css">
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<header>
+			<div id="hamburger">
+				<span></span>
+				<span></span>
+				<span></span>  
+			</div>
+			<nav id="myNav" class="nav">
+				<ul>
+					<li><a href="index.html">home</a></li>
+					<li><a href="about.html">about</a></li>
+					<li><a href="webcomic.html">webcomic</a></li>
+					<li><a href="game.html">game</a></li>
+					<li><a href="discussion.html">discussion</a></li>
+					<li><a href="sources.html">sources</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section id="landing-page">
+				<video class="background-video" autoplay loop muted poster="/images/city.jpg">
+					<source src="images/animation-bg.mp4" type="video/mp4">
+				</video>
+				<div class="logo">
+					<img src="images/cc-logo.png">
+					<a href="game.html">play now</a>
+				</div>
+				<div class="scrolldown" onclick="scrollToSection()">&#8595;</div>
+			</section>
+
+			<section id="about">
+				<div class="main-container">
+					<div class="window-draggable" id="article-one">
+						<div class="title-bar-draggable" style="cursor: pointer">
+							<div class="title-bar-text">Article</div>
+							<div class="title-bar-controls">
+								<button aria-label="Minimize"></button>
+								<button aria-label="Maximize"></button>
+								<button aria-label="Close"></button>
+							</div>
+						</div>
+					  
+						<div class="window-body" id="article">
+							<ul class="tree-view">
+								<h3>Vaccines and their undisclosed harmful side effects</h3>
+								<p>Dr. Sofia Hernandez, The Scientific Paper</p>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="window-draggable" id="article-two">
+						<div class="title-bar-draggable" style="cursor: pointer">
+							<div class="title-bar-text">Article</div>
+							<div class="title-bar-controls">
+								<button aria-label="Minimize"></button>
+								<button aria-label="Maximize"></button>
+								<button aria-label="Close"></button>
+							</div>
+						</div>
+					  
+						<div class="window-body" id="article">
+							<ul class="tree-view">
+								<h3>THE INTERNET IS DEAD AND SO ARE YOU</h3>
+								<p>Diego Hernandez, The Coastal Courier</p>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="window-draggable" id="article-three">
+						<div class="title-bar-draggable" style="cursor: pointer">
+							<div class="title-bar-text">Article</div>
+							<div class="title-bar-controls">
+								<button aria-label="Minimize"></button>
+								<button aria-label="Maximize"></button>
+								<button aria-label="Close"></button>
+							</div>
+						</div>
+					  
+						<div class="window-body" id="article">
+							<ul class="tree-view">
+								<h3>Climate change and severe weather cause major repercussions throughout the Maharlika region</h3>
+								<p>Isabella Dela Rosa, The Beacon Herald</p>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="window-draggable" id="article-four">
+						<div class="title-bar-draggable" style="cursor: pointer">
+							<div class="title-bar-text">Article</div>
+							<div class="title-bar-controls">
+								<button aria-label="Minimize"></button>
+								<button aria-label="Maximize"></button>
+								<button aria-label="Close"></button>
+							</div>
+						</div>
+					  
+						<div class="window-body" id="article">
+							<ul class="tree-view">
+								<h3>Everything you need to know about the Manaue Rice Terraces</h3>
+								<p>Miguel Cruz, The Summit Sentinel</p>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="window-draggable" id="main-article">
+						<div class="title-bar-draggable" style="cursor: pointer">
+							<div class="title-bar-text">About The Project</div>
+							<div class="title-bar-controls">
+								<button aria-label="Minimize"></button>
+								<button aria-label="Maximize"></button>
+								<button aria-label="Close"></button>
+							</div>
+						</div>
+					  
+						<div class="window-body" id="article">
+							<ul class="tree-view">
+								<img src="images/cc-logo.png">
+								<p>A project about misinformation. Step into a world where truth is scarce and lies run rampant. Explore a dystopian future, tackling the consequences of misinformation. Through a simulation & game, uncover the unsettling reality of a society engulfed in deceit, clicking deeper into a web of deceit.</p>
+								<button class="button-links" onclick="window.location.href='about.html';" target="_blank">Learn More</button>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<!--about section mobile-->
+			
+			<section id="about-mobile">
+				<div class="about-mobile-main-container">
+					<div class="window" id="about-mobile-window">
+						<div class="title-bar">
+							<div class="title-bar-text">Chronicle Cipher</div>
+							<div class="title-bar-controls">
+								<button aria-label="Minimize"></button>
+								<button aria-label="Maximize"></button>
+								<button aria-label="Close"></button>
+							</div>
+						</div>
+						
+						<div class="address-bar">
+							<p>Address</p>
+							<ul class="tree-view">"https://giggle.com/search-results"</ul>
+						</div>
+						  
+						<div class="window-body" id="about-mobile-container">
+							<ul class="tree-view">
+								<div class="about-mobile-content">
+									<div class="about-mobile-article">
+										<h3>Vaccines and their undisclosed harmful side effects</h3>
+										<p>Dr. Sofia Hernandez, The Scientific Paper </p>
+									</div>
+									
+									<div class="about-mobile-article">
+										<h3>THE INTERNET IS DEAD AND SO ARE YOU</h3>
+										<p>Diego Hernandez, The Coastal Courier</p>
+									</div>
+									
+									<div class="about-mobile-article">
+										<h3>Climate change and severe weather cause major repercussions throughout the Maharlika region</h3>
+										<p>Isabella Dela Rosa, The Beacon Herald</p>
+									</div>
+									
+									<div class="about-mobile-article">
+										<h3>Everything you need to know about the Manaue Rice Terraces</h3>
+										<p>Miguel Cruz, The Summit Sentinel</p>
+									</div>
+								</div>
+							</ul>
+							
+							<ul class="tree-view">
+								<div class="mobile-rationale">
+									<img src="images/cc-logo.png">
+									<p>A project about misinformation. Step into a world where truth is scarce and lies run rampant. Explore a dystopian future, tackling the consequences of misinformation. Through a simulation & game, uncover the unsettling reality of a society engulfed in deceit, clicking deeper into a web of deceit.</p>
+									<button class="button-links" onclick="window.location.href='about.html';" target="_blank">Learn More</button>
+								</div>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section id="webtoon">
+				<div class="webtoon-main-container">
+					<div class="window" id="webcomic-window">
+						<div class="title-bar">
+							<div class="title-bar-text">Webtoon Comic</div>
+							<div class="title-bar-controls">
+								<button aria-label="Minimize"></button>
+								<button aria-label="Maximize"></button>
+								<button aria-label="Close"></button>
+							</div>
+						</div>
+						  
+						<div class="window-body" id="webcomic-container">
+							<ul class="tree-view">
+								<div class="webcomic-content">
+									<div class="comic-poster">
+										<img src="images/comic-cover.jpg">
+									</div>
+									<div class="webcomic-text">
+										<h2>Before it all started</h2>
+										<p>Faced with a moral dilemma of a newfound technology at Ynnovation X, Daniel Perez, former computer engineer at the company, fights on a solitary quest for the truth in the heart of Maharlika. How far can false rumors and its consequences go? The prequel webtoon comic of Chronicle Cipher is out now.</p>
+										<button class="button-links" onclick="webcomic.html" target="_blank">Read Here</button>
+									</div>
+								</div>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section id="team">
+				<div class="team-main-container">
+					<div class="window" id="team-main-window">
+						<div class="title-bar">
+							<div class="title-bar-text">Developers & Creators</div>
+							<div class="title-bar-controls">
+								<button aria-label="Minimize"></button>
+								<button aria-label="Maximize"></button>
+								<button aria-label="Close"></button>
+							</div>
+						</div>
+						  
+						<div class="window-body" id="team-container">
+							<ul class="tree-view">
+								<div class="team-content" id="shelby">
+									<img src="images/pau.jpg">
+									<h3>Pau Alejandrino</h3>
+									<p>Game Developer & Writer</p>
+								</div>
+							</ul>
+							
+							<ul class="tree-view">
+								<div class="team-content" id="nad">
+									<img src="images/nad.jpg">
+									<h3>Nadiah Azman</h3>
+									<p>Website & Game Developer</p>
+								</div>
+							</ul>
+							
+							<ul class="tree-view">
+								<div class="team-content" id="hannah">
+									<img src="images/hannah.jpg">
+									<h3>Hannah Bajar</h3>
+									<p>Graphic Designer & Social Media Manager</p>
+								</div>
+							</ul>
+							
+							<ul class="tree-view">
+								<div class="team-content" id="eche">
+									<img src="images/eche.jpg">
+									<h3>Eche Cordero</h3>
+									<p>Illustrator & Writer</p>
+								</div>
+							</ul>
+							
+							<ul class="tree-view">
+								<div class="team-content" id="ishi">
+									<img src="images/ishi.jpg">
+									<h3>Cristina Hernandez</h3>
+									<p>Writer, Game Designer & Documentary Director</p>
+								</div>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<footer>
+			<div class="footer-container">
+				<div class="footer-logo">
+					<img src="images/cc-logo.png">
+				</div>
+				<div class="footer-links-container">
+					<a href="https://www.facebook.com/profile.php?id=61558420950930" target="_blank">
+						<img src="images/icons/facebook-icon.svg">
+					</a>
+					<a href="mailto:chroniclecipher@gmail.com" target="_blank">
+						<img src="images/icons/email-icon.svg">
+					</a>
+				</div>
+				<nav class="footer-nav-container">
+					<ul>
+						<li><a href="index.html">home</a></li>
+						<li><a href="about.html">about</a></li>
+						<li><a href="webcomic.html">webcomic</a></li>
+						<li><a href="game-download.html">download</a></li>
+						<li><a href="discussion.html">discussion</a></li>
+						<li><a href="sources.html">sources</a></li>
+					</ul>
+				</nav>
+				<p>Copyright 2024 - The Chronicle Cipher Team. DLS-CSB Multimedia Arts Capstone. Web Development by Nadiah Azman. Hosted on Github.</p>
+			</div>
+		</footer>
+
+		<script>
+		$(document).ready(function(){
+		  $('#hamburger').on('click', function() {
+		    $(this).toggleClass('close');
+		    $('#myNav').toggleClass('visible');
+		  });
+		});
+		
+		// landing page scroll down thing
+		function scrollToSection() {
+			const section = document.getElementById('about');
+			section.scrollIntoView({ behavior: 'smooth' });
+		}
+		
+		// draggable windows
+		var currentZIndex = 9;
+		
+		var windows = document.getElementsByClassName("window-draggable");
+		for (var i = 0; i < windows.length; i++) {
+			dragElement(windows[i]);
+		}
+
+		function dragElement(elmnt) {
+			var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+			var header = elmnt.getElementsByClassName("title-bar-draggable")[0];
+			header.onmousedown = dragMouseDown;
+
+			function dragMouseDown(e) {
+				e = e || window.event;
+				e.preventDefault();
+	    		currentZIndex++;
+	    		elmnt.style.zIndex = currentZIndex;
+				pos3 = e.clientX;
+				pos4 = e.clientY;
+				document.onmouseup = closeDragElement;
+				document.onmousemove = elementDrag;
+			}
+
+			function elementDrag(e) {
+				e = e || window.event;
+				e.preventDefault();
+				pos1 = pos3 - e.clientX;
+				pos2 = pos4 - e.clientY;
+				pos3 = e.clientX;
+				pos4 = e.clientY;
+				elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+				elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+			}
+
+			function closeDragElement() {
+				document.onmouseup = null;
+				document.onmousemove = null;
+			}
+		}
+		</script>
+		
+	</body>
+</html>

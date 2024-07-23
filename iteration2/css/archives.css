@@ -1,0 +1,281 @@
+.archives-body {
+	background: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)), url('../images/city.jpg');
+	background-size: cover;
+	background-position: center;
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-image: none;
+}
+
+h1 {
+	font-family: 'Nuetrina', sans-serif;
+	font-weight: 400;
+	font-size: 32px;
+	letter-spacing: 1px;
+	color: #FFCDE9;
+	text-shadow:
+      0 0 1px #f0f,
+      0 0 3px #f0f,
+      0 0 5px #f0f,
+      0 0 7px #f7a,
+      0 0 10px #f7a,
+      0 0 12px #f7a,
+      0 0 16px #f7a,
+      0 0 18px #f7a;
+}
+
+h2 {
+	font-family: 'Nuetrina', sans-serif;
+	font-size: 28px;
+	letter-spacing: 1px;
+	color: #C7F7FF;
+	text-shadow:
+      0 0 1px #0027FF,
+      0 0 3px #0027FF,
+      0 0 5px #0027FF,
+      0 0 7px #0027FF,
+      0 0 9px #83EEFF,
+      0 0 10px #83EEFF;
+}
+
+p {
+	font-family: 'pf-videotext', sans-serif;
+	font-size: 16px;
+	text-align: left;
+	color: #FBFF3D;
+}
+
+#animation {
+	width: 100%;
+	position: relative;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 60px;
+}
+
+.animation-main-container {
+	width: 80%;
+	background-color: #0D1010;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 50px;
+	padding: 20px;
+}
+
+
+@media screen and (min-width: 750px) {
+	.animation-container {
+		width: 800px;
+		margin: auto;
+	}
+}
+
+.teaser {
+	position: relative;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center
+}
+
+.caption-teaser {
+	width: 800px;
+	text-align: center;
+}
+
+.caption-teaser h6 {
+	padding: 5px;
+}
+
+#docu {
+	width: 100%;
+	position: relative;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 60px;
+}
+
+.docu-main-container {
+	width: 80%;
+	background-color: #0D1010;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 50px;
+	padding: 20px;
+}
+
+
+@media screen and (min-width: 750px) {
+	.docu-container {
+		width: 800px;
+		margin: auto;
+	}
+}
+
+.docu {
+	position: relative;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center
+}
+
+.caption {
+	text-align: center;
+}
+
+#posters {
+	width: 100%;
+	position: relative;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.posters-main-container {
+	background-color: #0D1010;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: auto;
+	margin-top: 80px;
+	margin-bottom: 40px;
+	padding: 20px;
+}
+
+
+@media screen and (min-width: 750px) {
+	.poster-container {
+		width: 800px;
+		margin: auto;
+	}
+}
+
+.illustration {
+	position: relative;
+	padding: 30px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center
+}
+
+.illustration img {
+	width: 500px;
+}
+
+.caption {
+	width: 600px;
+	text-align: center;
+	padding: 30px;
+}
+
+#characters {
+	width: 100%;
+	position: relative;
+	padding: 0;
+	display: flex;
+	align-items: center;
+}
+
+.archives-characters-container {
+	background-color: #0D1010;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: auto;
+	margin-top: 80px;
+	margin-bottom: 40px;
+	padding: 20px;
+}
+
+
+@media screen and (min-width: 750px) {
+	.character-sheet-container {
+		width: 1100px;
+		margin: auto;
+	}
+}
+
+.character-sheet {
+	position: relative;
+	padding: 30px;
+	margin: auto;
+	display: flex !important;
+	align-items: center;
+}
+
+.character-sheet img {
+	width: 700px;
+}
+
+.character-bio {
+	width: 600px;
+	text-align: left;
+	padding: 30px;
+}
+
+#concept-art {
+	width: 100%;
+	position: relative;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.art-main-container {
+	background-color: #0D1010;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: auto;
+	margin-top: 80px;
+	margin-bottom: 40px;
+	padding: 20px;
+}
+
+@media screen and (min-width: 750px) {
+	.concept-art-container {
+		width: 1100px;
+		margin: auto;
+	}
+}
+
+.artwork {
+	position: relative;
+	padding: 30px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center !important; 
+}
+
+.artwork img {
+	width: 1030px;
+}
+
+h6 {
+	font-family: 'pf-videotext', sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	text-align: center;
+	color: #FBFF3D;
+	margin: 0;
+}
+
+.slick-dots li button:before,
+.slick-dots li.slick-active button:before {
+  color: white !important;
+}
