@@ -29,7 +29,7 @@ nav.comicHeader {
 .comicHeader ul li {
 	display: inline-block;
 	text-align: center;
-	font-family: "Nuetrina", sans-serif;
+	font-family: pf-videotext, sans-serif;
 	font-size: 20px;
 	padding-right: 40px;
 }
@@ -57,7 +57,7 @@ nav.comicHeader {
 	width: 50%;
 }
 
-#myBtn {
+#scrollBtn {
   display: none; 
   position: fixed; 
   bottom: 20px; 
@@ -65,13 +65,13 @@ nav.comicHeader {
   z-index: 99; 
   cursor: pointer; 
   font-size: 18px; 
-  font-family: "Nuetrina", sans-serif;
+  font-family: pf-videotext, sans-serif;
   transition-duration: 0.03s;
   color: #FFCDE9;
   background: none;
 }
 
-#myBtn:hover {
+#scrollBtn:hover {
   color: #FFCDE9;
   text-shadow:
       0 0 1px #f0f,
@@ -104,14 +104,14 @@ nav.comicHeader {
 		width: 100%;
 	}
 	
-	#myBtn {
+	#scrollBtn {
 	  display: none; 
 	  position: fixed; 
 	  bottom: 20px; 
 	  right: 30px; 
 	  z-index: 99; 
 	  font-size: 18px; 
-	  font-family: "Nuetrina", sans-serif;
+	  font-family: pf-videotext, sans-serif;
 	  transition-duration: 0.03s;
 	  color: #FFCDE9;
 	  background: none;
