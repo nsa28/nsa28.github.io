@@ -23,14 +23,14 @@ body {
 	background-position: center;
 }
 
-#game-download {
+#discussion {
 	width: 100%;
 	position: relative;
 	padding: 0;
 	margin: 30px 0 50px 0;
 }
 
-.game-download-main-container {
+.discussion-main-container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -38,52 +38,33 @@ body {
 	padding: 30px;
 }
 
-.window#game-download-window {
+.window#discussion-window {
 	width: 1080px;
 	margin: 20px;
 }
 
-.game-download-content {
+.discussion-content {
+	margin: auto;
 	display: flex;
 	flex-direction: column;
 }
 
-.game-download-text {
+.forum-info {
+	margin: auto;
 	padding: 30px;
-	flex-direction: column;
-	text-align: left;
+	position: relative
 }
 
-.game-download-text h2 a {
+.forum-info h5 {
 	font-family: pf-videotext, sans-serif;
-	font-weight: semibold;
-	text-decoration: underline;
-	line-height: 0.95;
-	color: blue;
-	margin-bottom: 20px;
-}
-
-.game-download-text h5 {
 	font-size: 16px;
-	font-weight: 400;
+	font-style: italic;
 	margin-bottom: 20px;
 	color: #010101;
 }
 
-.how-to-install {
-	padding: 30px;
-	flex-direction: column;
-	text-align: left;
-}
-
-.how-to-install h3 {
-	font-family: pf-videotext, sans-serif;
-	font-weight: semibold;
-	font-style: italic;
-}
-
-.how-to-install p {
-	margin: 5px 0 5px 0;
+#discussions {
+	padding: 20px;
 }
 
 button.button-links {
@@ -217,17 +198,21 @@ footer {
 		font-size: 14px !important;
 	}
 	
-	#game-download {
+	#discussion {
 		width: 100%;
 		position: relative;
 		padding: 0;
 		margin-top: 70px;
 	}
 	
-	.game-download-main-container {
+	.discussion-main-container {
 		padding: 0;
 	}
-
+	
+	#discussions {
+		width: 100%;
+	}
+	
 	.footer-nav-container {
 		font-size: 14px;
 	}

@@ -1,93 +1,374 @@
-.sources-body {
-	background: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)), url('../images/city.jpg');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+body {
+	font-family: hydrophilia-iced, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.4;
+	letter-spacing: -0.3px;
+	color: #010101;
+	background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url('../images/city-bg.jpg');
 	background-size: cover;
 	background-position: center;
-	overflow-x: hidden;
-	margin: 0;
-	padding: 0;
-}
-
-header {
-	background-image: none;
-}
-
-h1 {
-	font-family: pf-videotext, sans-serif;
-	font-style: italic;
-	font-weight: bold;
-	font-size: 24px;
-	letter-spacing: -0.8px;
-	line-height: 1;
-	margin: 0;
-}
-
-p {
-	font-family: "VT323", monospace;
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 18px;
-	letter-spacing: -0.6px;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	margin: 0;
 }
 
 #sources {
 	width: 100%;
 	position: relative;
 	padding: 0;
-	display: flex;
-	align-items: center;
+	margin: 30px 0 50px 0;
 }
 
-.sources-maincontainer {
+.sources-main-container {
 	display: flex;
-	flex-direction: column;
+	justify-content: center;
 	align-items: center;
 	margin: auto;
-	margin-top: 80px;
-	margin-bottom: 40px;
-	padding: 20px;
+	padding: 30px;
 }
 
-.source-blurb {
-	width: 980px;
-	background-color: #F4FBFF;
-	border: 4px solid #FF6EC0;
-	position: relative;
-	padding: 20px;
+.window#sources-window {
+	width: 1080px;
 	margin: 20px;
+}
+
+.sources-content {
 	display: flex;
 	flex-direction: column;
-	align-self: center;
+	margin: auto;
+	align-items: center;
 }
 
-.source-text {
-	text-align: left;
-	padding: 20px;
+.about-project-text {
+	font-size: 16px;
+	margin: auto;
+	padding: 50px;
+	flex-direction: column;
+	text-align: justify;
 }
 
-.source-text a {
-	background-color: #180C7D;
+.about-project-text h2 {
 	font-family: pf-videotext, sans-serif;
-	font-size: 18px;
+	font-weight: semibold;
+	font-style: italic;
+	line-height: 0.95;
+	color: #180E4B;
+	margin-bottom: 20px;
+}
+
+.about-project-text p {
+	color: #010101;
+}
+
+.about-project-text p > a {
+	position: relative;
+	color: blue;
+	text-decoration: underline;
+}
+
+.about-project-text a:hover {
+	color: #FF6EC0;
+}
+
+.misinformation {
+	font-size: 16px;
+	margin: auto;
+	padding: 0px 50px 0px 50px;
+	flex-direction: column;
+	text-align: justify;
+}
+
+.misinformation#two {
+	padding: 50px 50px 30px 50px;
+}
+
+.misinformation p {
+	text-align: justify;
+	margin-top: 10px;
+	color: #010101;
+}
+
+.misinformation h1 {
+	font-family: pf-videotext, sans-serif;
+	font-size: 48px;
+	font-weight: 600;
+	font-style: italic;
+	text-align: left;
+}
+
+.misinformation h6 {
+	margin: 10px 0 20px 0;
+	opacity: 40%;
+	font-style: italic;
+	text-align: left;
+	font-size: 12px;
+	font-weight: 300;
+}
+
+.about-thesis {
+	width: 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	margin: auto;
+}
+
+.about-thesis a {
+	background-color: #180C7D;
+	font-family: "Nuetrina", sans-serif;
+	font-size: 24px;
 	color: #FBFF3D;
-	text-transform: uppercase;
 	text-decoration: none;
 	text-align: center;
-	padding: 10px 20px;
+	padding: 20px 45px ;
 	display: inline-block;
-	position: relative;
 	transition-duration: 0.3s;
 }
 
-.source-text a:hover {
+.about-thesis a:hover {
 	background: #F4FBFF;
 	border: 3px solid #180C7D;
 	color: #180C7D;
 }
 
-.source-text a:active {
+.about-thesis a:active {
 	background-color: #180C7D;
 	color: #FBFF3D;
+}
+
+/* THE TEAM SECTION */
+
+#team {
+	width: 100%;
+	position: relative;
+	padding: 0;
+}
+
+.team-main-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	padding: 30px;
+}
+
+.window#team-main-window {
+	margin: 40px;
+}
+
+.window-body#team-container {
+	float: left;
+	display: flex;
+}
+
+.team-content {
+	width: 240px;
+}
+
+.team-content img {
+	width: 100%;
+	margin-bottom: 1rem;
+}
+
+.team-content h3 {
+	font-family: pf-videotext, sans-serif;
+	font-size: 24px;
+	font-style: italic;
+	line-height: 0.95;
+	color: #180E4B;
+	margin-bottom: 0.2rem;
+}
+
+.team-content p {
+	font-size: 14px;
+	color: #010101;
+}
+
+ul.roles {
+	list-style-type: none;
+	float: left;
+	padding: 0;
+	color: blue;
+	font-size: 14px;
+	font-weight: 400;
+	float: left;
+}
+
+.team-member-contact {
+	float: left;
+	width: 100%;
+	position: relative;
+}
+
+.team-member-contact img {
+	float: left;
+	width: 30px;
+	padding: 10px;
+	padding-left: 0;
+}
+
+#docu {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	padding: 50px;
+	z-index: 1
+}
+
+.docu-vid {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	padding: 30px;
+	z-index: 1;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 750px) {
+	#hamburger,
+	#about-project-mobile {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 749px) {
+	body {
+		font-size: 14px !important;
+	}
+	
+	#about-landing-page {
+		display: none;
+	}
+	
+	#about-project-mobile {
+		width: 100%;
+		position: relative;
+		padding: 0;
+		margin-top: 70px;
+	}
+	
+	.about-project-mobile-main-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: auto;
+	}
+
+	.window#about-project-mobile-window {
+		margin: 20px;
+	}
+	
+	.about-project-logo-mobile img {
+		padding: 10px;
+	}
+	
+	.window-body#about-project-mobile-container > .tree-view {
+		margin-bottom: 10px;
+	}
+	
+	.window-body#about-project-mobile-container > .tree-view:last-child {
+		margin-bottom: 0px;
+	}
+	
+	.about-project-text-mobile, .misinformation-mobile p {
+		margin-top: 20px;
+		text-align: justify;
+	}
+	
+	.address-bar {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		padding: 10px;
+	}
+	
+	.address-bar p {
+		margin: auto;
+	}
+	
+	.address-bar > .tree-view {
+		width: 100%;
+	}
+
+	.window-body#about-project-mobile-container {
+		float: left;
+	}
+	
+	.misinformation-mobile h1 {
+		font-size: 28px;
+		line-height: 1.8rem;
+	}
+	
+	.misinformation-mobile h5 {
+		opacity: 50%;
+		font-weight: 400;
+		font-style: italic;
+	}
+	
+	.misinformation-mobile#two {
+		margin-top: 50px;
+	}
+	
+	.button-links {
+		margin: 30px 0 10px 0;
+	}
+	
+	/* THE TEAM SECTION */
+
+	.team-main-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: auto;
+		padding: 0px;
+	}
+
+	.window#team-main-window {
+		margin: 40px;
+	}
+
+	.window-body#team-container {
+		float: left;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.team-content {
+		width: 100%;
+	}
+
+	.team-content h3 {
+		font-family: pf-videotext, sans-serif;
+		font-size: 24px;
+		font-style: italic;
+		line-height: 0.95;
+		color: #180E4B;
+		margin-bottom: 0.2rem;
+	}
+
+	.team-content p {
+		font-size: 14px;
+		color: #010101;
+	}
+
+	iframe {
+		width: 100% !important;
+		height: auto !important;
+	}
 }
