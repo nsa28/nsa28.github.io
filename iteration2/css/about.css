@@ -10,151 +10,110 @@ body, html {
 	overflow-x: hidden;
 }
 
-#about-lp {
+body {
+	font-family: hydrophilia-iced, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.4;
+	letter-spacing: -0.3px;
+	color: #010101;
+	background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url('../images/city-bg.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+#about-landing-page {
 	width: 100%;
-	height: 100vh;
 	position: relative;
 	padding: 0;
-	display: flex;
-	align-items: center;
 }
 
-.about-lp-container {
+.about-landing-page-container {
 	display: flex;
+	justify-content: center;
 	align-items: center;
-	flex-direction: column;
-	margin: auto;
-	padding-top: 80px;
-	padding-bottom: 0;
-}
-
-.about-lp-container img {
-	width: 30%;
-}
-
-.about-lp-bio-container {
-	width: 980px;
-	display: flex;
-	align-items: center;
-	flex-direction: column;
 	margin: auto;
 	padding: 30px;
 }
 
-.about-lp-bio-container p {
-	color: #FBFF3D;
+.window#about-window {
+	width: 1080px;
+	margin: 20px;
+}
+
+.about-content {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	align-items: center;
+}
+
+.about-project-logo img {
+	margin-top: 30px;
+	width: 600px;
+}
+
+.about-project-text {
+	font-size: 16px;
+	margin: auto;
+	padding: 50px;
+	flex-direction: column;
 	text-align: justify;
-	font-size: 14px;
-	margin-top: 10px;
 }
 
-.about-comic-link {
-	display: inline-block;
+.about-project-text h2 {
+	font-family: pf-videotext, sans-serif;
+	font-weight: semibold;
+	font-style: italic;
+	line-height: 0.95;
+	color: #180E4B;
+	margin-bottom: 20px;
+}
+
+.about-project-text p {
+	color: #010101;
+}
+
+.about-project-text p > a {
 	position: relative;
+	color: blue;
+	text-decoration: underline;
+}
+
+.about-project-text a:hover {
 	color: #FF6EC0;
-	text-decoration: none;
-}
-
-.about-comic-link:after {
-	content: '';
-	position: absolute;
-	transform: scaleX(0);
-	width: 100%;
-	height: 2px;
-	bottom: 0;
-	left: 0;
-	background-color: #FF6EC0;
-	transform-origin: right;
-	transition: transform 0.25s ease-out;
-}
-
-.about-comic-link:visited {
-	text-decoration: none;
-}
-
-.about-comic-link:hover:after {
-	transform: scaleX(1);
-	transform-origin: left;
-}
-
-.about-wbwwb-link {
-	display: inline-block;
-	position: relative;
-	color: #FF6EC0;
-	text-decoration: none;
-}
-
-.about-wbwwb-link:after {
-	content: '';
-	position: absolute;
-	transform: scaleX(0);
-	width: 100%;
-	height: 2px;
-	bottom: 0;
-	left: 0;
-	background-color: #FF6EC0;
-	transform-origin: right;
-	transition: transform 0.25s ease-out;
-}
-
-.about-wbwwb-link:visited {
-	text-decoration: none;
-}
-
-.about-wbwwb-link:hover:after {
-	transform: scaleX(1);
-	transform-origin: left;
-}
-
-#intro-content {
-	width: 100%;
-	position: relative;
-	padding: 0;
-	display: flex;
-	align-items: center;
-}
-
-.intro-content-container {
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	margin: auto;
-	padding: 30px;
 }
 
 .misinformation {
-	width: 980px;
+	font-size: 16px;
 	margin: auto;
-	padding: 30px;
+	padding: 0px 50px 0px 50px;
+	flex-direction: column;
+	text-align: justify;
 }
 
-.intro-content-container h1 {
-	padding-top: 30px;
-	font-family: "Nuetrina", sans-serif;
-	font-weight: 400;
-	font-size: 42px;
-	color: #FFCDE9;
-	text-shadow:
-      0 0 1px #f0f,
-      0 0 3px #f0f,
-      0 0 5px #f0f,
-      0 0 7px #f7a,
-      0 0 10px #f7a,
-      0 0 12px #f7a,
-      0 0 16px #f7a,
-      0 0 18px #f7a;
+.misinformation#two {
+	padding: 50px 50px 30px 50px;
 }
 
 .misinformation p {
-	color: #FBFF3D;
 	text-align: justify;
-	font-size: 14px;
 	margin-top: 10px;
+	color: #010101;
+}
+
+.misinformation h1 {
+	font-family: pf-videotext, sans-serif;
+	font-size: 48px;
+	font-weight: 600;
+	font-style: italic;
+	text-align: left;
 }
 
 .misinformation h6 {
-	margin-top: 10px;
-	color: #FBFF3D;
+	margin: 10px 0 20px 0;
+	opacity: 40%;
 	font-style: italic;
 	text-align: left;
 	font-size: 12px;
@@ -192,82 +151,59 @@ body, html {
 	color: #FBFF3D;
 }
 
-/* ABOUT TEAM */
+/* THE TEAM SECTION */
 
-#about-team {
+#team {
 	width: 100%;
 	position: relative;
-	margin: 0;
 	padding: 0;
 }
 
-.about-team-maincontainer {
+.team-main-container {
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	margin: auto;
 	padding: 30px;
-	position: relative;
 }
 
-.about-team-title {
-	font-family: "Nuetrina", sans-serif;
-	font-weight: 400;
-	font-size: 42px;
-	color: #FFCDE9;
-	text-shadow:
-      0 0 1px #f0f,
-      0 0 3px #f0f,
-      0 0 5px #f0f,
-      0 0 7px #f7a,
-      0 0 10px #f7a,
-      0 0 12px #f7a,
-      0 0 16px #f7a,
-      0 0 18px #f7a;
+.window#team-main-window {
+	margin: 40px;
 }
 
-.about-team-container {
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: flex-start;
-	margin: auto;
-	z-index: 1;
-}
-
-.about-team-member {
-	padding: 30px;
+.window-body#team-container {
 	float: left;
-	color: #FFCDE9;
-	position: relative;
 	display: flex;
-	flex-direction: column;
-	justify-items: space-between;
-	z-index: 1;
 }
 
-.about-team-member h2 {
-	font-family: "Nuetrina", sans-serif;
-	letter-spacing: 1px;
-	font-size: 22px;
-	margin: 20px 0 0 0;
-	color: #C7F7FF;
-	text-shadow:
-      0 0 1px #0027FF,
-      0 0 3px #0027FF,
-      0 0 5px #0027FF,
-      0 0 7px #0027FF,
-      0 0 9px #83EEFF,
-      0 0 10px #83EEFF;
+.team-content {
+	width: 240px;
+}
+
+.team-content img {
+	width: 100%;
+	margin-bottom: 1rem;
+}
+
+.team-content h3 {
+	font-family: pf-videotext, sans-serif;
+	font-size: 24px;
+	font-style: italic;
+	line-height: 0.95;
+	color: #180E4B;
+	margin-bottom: 0.2rem;
+}
+
+.team-content p {
+	font-size: 14px;
+	color: #010101;
 }
 
 ul.roles {
 	list-style-type: none;
 	float: left;
 	padding: 0;
-	font-family: 'pf-videotext', sans-serif;
-	color: #FBFF3D;
+	color: blue;
 	font-size: 14px;
 	font-weight: 400;
 	float: left;
@@ -282,7 +218,6 @@ ul.roles {
 .team-member-contact img {
 	float: left;
 	width: 30px;
-	filter: invert(1);
 	padding: 10px;
 	padding-left: 0;
 }
@@ -307,45 +242,133 @@ ul.roles {
 	z-index: 1;
 }
 
+/* MEDIA QUERIES */
+@media screen and (min-width: 750px) {
+	#hamburger,
+	#about-project-mobile {
+		display: none;
+	}
+}
+
 @media screen and (max-width: 749px) {
-	#about-lp {
-		height: auto;
+	body {
+		font-size: 14px !important;
+	}
+	
+	#about-landing-page {
+		display: none;
+	}
+	
+	#about-project-mobile {
+		width: 100%;
+		position: relative;
+		padding: 0;
+		margin-top: 70px;
+	}
+	
+	.about-project-mobile-main-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: auto;
 	}
 
-	.about-lp-container,
-	.about-lp-bio-container,
-	.intro-content-container,
-	.misinformation,
-	.about-team-maincontainer {
+	.window#about-project-mobile-window {
+		margin: 20px;
+	}
+	
+	.about-project-logo-mobile img {
+		padding: 10px;
+	}
+	
+	.window-body#about-project-mobile-container > .tree-view {
+		margin-bottom: 10px;
+	}
+	
+	.window-body#about-project-mobile-container > .tree-view:last-child {
+		margin-bottom: 0px;
+	}
+	
+	.about-project-text-mobile, .misinformation-mobile p {
+		margin-top: 20px;
+		text-align: justify;
+	}
+	
+	.address-bar {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		padding: 10px;
+	}
+	
+	.address-bar p {
+		margin: auto;
+	}
+	
+	.address-bar > .tree-view {
 		width: 100%;
 	}
 
-	.about-lp-container img {
-		width: 60%;
+	.window-body#about-project-mobile-container {
+		float: left;
+	}
+	
+	.misinformation-mobile h1 {
+		font-size: 28px;
+		line-height: 1.8rem;
+	}
+	
+	.misinformation-mobile h5 {
+		opacity: 50%;
+		font-weight: 400;
+		font-style: italic;
+	}
+	
+	.misinformation-mobile#two {
+		margin-top: 50px;
+	}
+	
+	.button-links {
+		margin: 30px 0 10px 0;
+	}
+	
+	/* THE TEAM SECTION */
+
+	.team-main-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: auto;
+		padding: 0px;
 	}
 
-	.about-team-container {
+	.window#team-main-window {
+		margin: 40px;
+	}
+
+	.window-body#team-container {
+		float: left;
+		display: flex;
 		flex-direction: column;
 	}
-	
-	#intro-content {
-		height: auto;
-	}
-	
-	.intro-content-container h1 {
-		font-size: 32px;
-		padding: 10px;
-		text-align: center;
-	}
-	
-		/* Docu */
-	#docu {
-		height: 65vh;
+
+	.team-content {
+		width: 100%;
 	}
 
-	.docu-vid {
-		padding: 0;
-		margin: 0;
+	.team-content h3 {
+		font-family: pf-videotext, sans-serif;
+		font-size: 24px;
+		font-style: italic;
+		line-height: 0.95;
+		color: #180E4B;
+		margin-bottom: 0.2rem;
+	}
+
+	.team-content p {
+		font-size: 14px;
+		color: #010101;
 	}
 
 	iframe {
