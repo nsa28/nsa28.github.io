@@ -534,7 +534,9 @@ footer {
 .footer-nav-container ul li {
 	display: inline-block;
 	text-align: center;
-	font-family: "Nuetrina", sans-serif;
+	font-family: hydrophilia-iced, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: -0.5px;
 	padding-right: 40px;
 }
 
