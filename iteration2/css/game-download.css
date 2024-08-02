@@ -54,11 +54,16 @@ body {
 	text-align: left;
 }
 
-.game-download-text h2 a {
+.game-download-text h2 {
 	font-family: pf-videotext, sans-serif;
 	font-weight: semibold;
+	margin-bottom: 10px;
+}
+
+.game-download-text h4 a {
+	font-family: hydrophilia-iced, sans-serif;
 	text-decoration: underline;
-	line-height: 0.95;
+	line-height: 1;
 	color: blue;
 	margin-bottom: 20px;
 }
@@ -66,7 +71,7 @@ body {
 .game-download-text h5 {
 	font-size: 16px;
 	font-weight: 400;
-	margin-bottom: 20px;
+	margin-top: 20px;
 	color: #010101;
 }
 
