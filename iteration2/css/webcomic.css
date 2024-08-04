@@ -156,7 +156,7 @@ footer {
 .footer-nav-container ul li {
 	display: inline-block;
 	text-align: center;
-	font-family: "Nuetrina", sans-serif;
+	font-family: pf-videotext, sans-serif;
 	padding-right: 40px;
 }
 
