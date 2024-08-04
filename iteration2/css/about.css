@@ -121,37 +121,6 @@ body {
 	font-weight: 300;
 }
 
-.about-thesis {
-	width: 100%;
-	position: relative;
-	display: flex;
-	justify-content: center;
-	margin: auto;
-}
-
-.about-thesis a {
-	background-color: #180C7D;
-	font-family: "Nuetrina", sans-serif;
-	font-size: 24px;
-	color: #FBFF3D;
-	text-decoration: none;
-	text-align: center;
-	padding: 20px 45px ;
-	display: inline-block;
-	transition-duration: 0.3s;
-}
-
-.about-thesis a:hover {
-	background: #F4FBFF;
-	border: 3px solid #180C7D;
-	color: #180C7D;
-}
-
-.about-thesis a:active {
-	background-color: #180C7D;
-	color: #FBFF3D;
-}
-
 /* THE TEAM SECTION */
 
 #team {
