@@ -92,7 +92,6 @@ button.button-links:active {
 
 .animation {
 	display: flex;
-	margin: auto;
 	padding: 30px;
 	z-index: 1;
 }
