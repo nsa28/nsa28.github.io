@@ -51,9 +51,14 @@ body {
 	width: 400px;
 }
 
-.webtoon-comic-text {
+.webtoon-comic-text-container {
 	margin: auto;
 	padding: 50px;
+	display: flex;
+	flex-direction: column;
+}
+
+.webtoon-comic-text {
 	flex-direction: column;
 }
 
@@ -279,6 +284,17 @@ footer {
 		font-size: 16px;
 		padding: 10px 40px;
 		box-shadow: var(--border-sunken-outer), var(--border-sunken-inner);
+	}
+	
+	.animation {
+		padding-top: 0px;
+	}
+	
+	iframe {
+		width: 100% !important;
+		height: auto !important;
+		margin: 0;
+		padding: 20px 0 20px 0;
 	}
 	
 	.footer-nav-container {
