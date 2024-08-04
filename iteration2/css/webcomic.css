@@ -85,6 +85,12 @@ button.button-links:active {
 	box-shadow: var(--border-sunken-outer), var(--border-sunken-inner);
 }
 
+.animation {
+	width: 100%;
+	padding-top: 30px;
+}
+	
+
 /***FOOTER***/
 
 footer {
