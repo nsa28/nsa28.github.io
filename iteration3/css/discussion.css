@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+body {
+	font-family: "VT323", monospace;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1;
+	letter-spacing: -0.8px;
+	color: #010101;
+	background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url('../images/city-bg.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+#discussion {
+	width: 100%;
+	position: relative;
+	padding: 0;
+	margin: 30px 0 50px 0;
+}
+
+.discussion-main-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	padding: 30px;
+}
+
+.window#discussion-window {
+	width: 1080px;
+	margin: 20px;
+}
+
+.discussion-content {
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.forum-info {
+	margin: auto;
+	padding: 30px;
+	position: relative
+}
+
+.forum-info h5 {
+	font-family: pf-videotext, sans-serif;
+	font-size: 16px;
+	font-style: italic;
+	margin-bottom: 20px;
+	color: #010101;
+}
+
+#discussions {
+	padding: 20px;
+}
+
+button.button-links {
+	color: #010101;
+	font-size: 16px;
+	padding: 10px 40px;
+}
+
+button.button-links:active {
+	color: #010101;
+	font-size: 16px;
+	padding: 10px 40px;
+	box-shadow: var(--border-sunken-outer), var(--border-sunken-inner);
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 750px) {
+	#hamburger {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 749px) {
+	body {
+		font-size: 16px !important;
+	}
+	
+	#discussion {
+		width: 100%;
+		position: relative;
+		padding: 0;
+		margin-top: 70px;
+	}
+	
+	.discussion-main-container {
+		padding: 0;
+	}
+	
+	#discussions {
+		width: 100%;
+	}
+}

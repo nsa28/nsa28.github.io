@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-3XEVQ6LDCB"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-3XEVQ6LDCB');
+		</script>
+		<title>DISCUSSION</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0">
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+		<link rel="stylesheet" href="https://use.typekit.net/ocj4qzf.css">
+		<link rel="stylesheet" href="css/98.css" type="text/css">
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<link rel="stylesheet" href="css/discussion.css" type="text/css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<header>
+			<div id="hamburger">
+				<span></span>
+				<span></span>
+				<span></span>  
+			</div>
+			<nav id="myNav" class="nav">
+				<ul>
+					<li><a href="index.html">home</a></li>
+					<li><a href="about.html">about</a></li>
+					<li><a href="webcomic.html">webcomic</a></li>
+					<li><a href="game-download.html">game</a></li>
+					<li><a href="discussion.html">discussion</a></li>
+					<li><a href="sources.html">sources</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<main>
+			<section id="discussion">
+				<div class="discussion-main-container">
+					<div class="window" id="discussion-window">
+						<div class="title-bar">
+							<div class="title-bar-text">Discussion</div>
+							<div class="title-bar-controls">
+								<button aria-label="Minimize"></button>
+								<button aria-label="Maximize"></button>
+								<button aria-label="Close"></button>
+							</div>
+						</div>
+						  
+						<div class="window-body" id="discussion-container">
+							<ul class="tree-view">
+								<div class="discussion-content">
+									<div class="forum-info">
+										<h5>We've opened a forum by Github Discussions for users to talk about our game. Be cautious and honest of what you post. False information may be reported to Chronicle Cipher.</h5>
+										<p>Please sign in to your Github account to post.</p>
+									</div>
+									<div id="discussions">
+										<script src="https://giscus.app/client.js"
+											data-repo="nsa28/nsa28.github.io"
+											data-repo-id="R_kgDOLa5_oQ"
+											data-category="General"
+											data-category-id="DIC_kwDOLa5_oc4CemPl"
+											data-mapping="title"
+											data-strict="0"
+											data-reactions-enabled="1"
+											data-emit-metadata="0"
+											data-input-position="top"
+											data-theme="light"
+											data-lang="en"
+											crossorigin="anonymous"
+											async>
+										</script>
+									</div>
+								</div>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		
+		<footer>
+			<div class="footer-container">
+				<div class="footer-logo">
+					<img src="images/cc-logo.png">
+				</div>
+				<div class="footer-links-container">
+					<a href="https://twitter.com/ChronicleCipher" target="_blank">
+						<img src="images/icons/x-icon.svg">
+					</a>
+					<a href="mailto:chroniclecipher@gmail.com" target="_blank">
+						<img src="images/icons/email-icon.svg">
+					</a>
+				</div>
+				<nav class="footer-nav-container">
+					<ul>
+						<li><a href="index.html">home</a></li>
+						<li><a href="about.html">about</a></li>
+						<li><a href="webcomic.html">webcomic</a></li>
+						<li><a href="game-download.html">game</a></li>
+						<li><a href="discussion.html">discussion</a></li>
+						<li><a href="sources.html">sources</a></li>
+					</ul>
+				</nav>
+				<p>Copyright 2024 - The Chronicle Cipher Team. DLS-CSB Multimedia Arts Capstone. Web Development by Nadiah Azman. Hosted on Github.</p>
+			</div>
+		</footer>
+		
+		<script>
+		$(document).ready(function(){
+		  $('#hamburger').on('click', function() {
+		    $(this).toggleClass('close');
+		    $('#myNav').toggleClass('visible');
+		  });
+		});		
+		</script>
+
+	</body>
+</html>

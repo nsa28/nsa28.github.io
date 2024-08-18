@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+body {
+	font-family: "VT323", monospace;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1;
+	letter-spacing: -0.8px;
+	color: #010101;
+	background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url('../images/city-bg.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+#sources {
+	width: 100%;
+	position: relative;
+	padding: 0;
+	margin: 30px 0 50px 0;
+}
+
+.sources-main-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	padding: 30px;
+}
+
+.window#sources-window {
+	width: 1080px;
+	margin: 20px;
+}
+	
+.window-body#sources-container > .tree-view:last-child {
+		margin-bottom: 0px;
+	}
+	
+.address-bar {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	padding: 10px;
+}
+	
+.address-bar p {
+	margin: auto;
+}
+	
+.address-bar > .tree-view {
+	width: 100%;
+}
+
+.window-body#sources-container {
+	float: left;
+}
+
+.sources-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+	text-align: left;
+}
+
+.source {
+	margin-bottom: 50px;
+}
+
+.source h3 a {
+	font-family: pf-videotext, sans-serif;
+	font-weight: semibold;
+	font-style: italic;
+	line-height: 0.95;
+	color: blue;
+	text-decoration: underline;
+	margin: 20px 0 20px 0;
+}
+
+.source a:hover {
+	color: #FF6EC0;
+}
+
+.source p {
+	color: #010101;
+	margin-top: 10px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 750px) {
+	#hamburger,
+	#about-project-mobile {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 749px) {
+	.address-bar {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		padding: 10px;
+	}
+	
+	.source {
+		margin-bottom: 10px;
+	}
+	
+	.source h3 {
+		font-size: 28px;
+	}
+	
+	.source p {
+		font-size: 16px;
+	}
+	
+	.address-bar p {
+		margin: auto;
+	}
+	
+	.address-bar > .tree-view {
+		width: 100%;
+	}
+	
+	.button-links {
+		margin: 30px 0 10px 0;
+	}
+}
