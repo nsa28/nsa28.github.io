@@ -109,10 +109,10 @@ nav {
 	position: fixed;
 	display: flex;
 	justify-content: center;
-	background: linear-gradient(rgba(0,0,0,1) 30%, rgba(0,0,0,0) 130%);
+	background: rgb(200,200,200);
+	background: linear-gradient(rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
 	align-items: center;
 	z-index: 100;
-	transition: top 0.3s;
 }
 
 nav ul li {
@@ -234,31 +234,6 @@ li a:active {
       0 0 18px #f7a;
 }
 
-.soc-med {
-	width: 100%;
-  margin: auto;
-  bottom: 50px;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  gap: 2rem;
-  background-color: transparent;
-  z-index: 1;
-}
-
-.soc-med a {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-.soc-med img {
-	width: 20px;
-  height: 20px;
-	filter: invert(1);
-}
-
 .scrolldown {
 	font-size: 24px;
 	color: white;
@@ -286,7 +261,7 @@ li a:active {
 
 .instruction {
 	position: relative;
-	font-size: 14px;
+	font-size: 12px;
 	text-transform: uppercase;
 	color: white;
 	opacity: 50%;
